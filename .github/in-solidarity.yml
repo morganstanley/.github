@@ -1,0 +1,11 @@
+rules:
+  master:
+    level: notice
+  slave:
+    level: notice
+  whitelist:
+    level: notice
+  blacklist:
+    level: notice
+ignore:
+ - ".github/in-solidarity.yml"
