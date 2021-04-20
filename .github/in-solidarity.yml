@@ -8,8 +8,10 @@ rules:
   blacklist:
     level: notice
   segregation:
-    regex: [/segregation/gi],
-    level: notice,
-    alternatives: ["separation"]
+    regex: 
+      - /segregation/gi
+    level: notice
+    alternatives: 
+      - separation
 ignore:
  - ".github/in-solidarity.yml"
