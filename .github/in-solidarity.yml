@@ -8,7 +8,7 @@ rules:
   blacklist:
     level: notice
   grandfathered:
-    level: off
+    level: notice
   sanity_check:
     level: off
   man_hours:
