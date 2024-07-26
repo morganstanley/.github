@@ -1,0 +1,28 @@
+{
+  "github.com": {
+    "morganstanley": {
+      "included": [
+        "desktopJS",
+        "ts-mocking-bird",
+        "dotnet-please",
+        "Crossroads",
+        "ComposeUI",
+        "eslint-plugin-externalincludes",
+        "testplan",
+        "message-broker",
+        "needle",
+        "Xpedite",
+        "Plug-in-AppDynamics-Data-Source",
+        "modern-cpp-kafka",
+        "releaseherald",
+        "binlog",
+        "gradle-plugin-application"
+      ],
+      "excluded": []
+    },
+    "morganstanley-labs": {
+      "included": [],
+      "excluded": []
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "github.com": {
+    "morganstanley": {
+      "eslint-plugin-externalincludes": {
+        "previous": [
+          {
+            "score": 7.8,
+            "date": "2024-03-09T13:07:52Z",
+            "commit": "1daa24d376075c08ff6c76142724cfc523026dfc"
+          },
+          {
+            "score": 8.1,
+            "date": "2024-03-13T13:26:54Z",
+            "commit": "1daa24d376075c08ff6c76142724cfc523026dfc"
+          }
+        ],
+        "current": {
+          "score": 7.8,
+          "date": "2024-03-20T13:27:56Z",
+          "commit": "1daa24d376075c08ff6c76142724cfc523026dfc"
+        }
+      },
+      "desktopJS": {
+        "previous": [
+          {
+            "score": 8.1,
+            "date": "2024-03-08T16:34:21Z",
+            "commit": "b563282d6ea20476c45633e772c6604fc38a5bbc"
+          },
+          {
+            "score": 7.9,
+            "date": "2024-04-03T13:28:26Z",
+            "commit": "e0ff564e636e807153cfc820127164a23528daed"
+          },
+          {
+            "score": 7.8,
+            "date": "2024-04-24T13:31:00Z",
+            "commit": "e0ff564e636e807153cfc820127164a23528daed"
+          },
+          {
+            "score": 7.9,
+            "date": "2024-05-01T13:26:31Z",
+            "commit": "4b2828c86e357631ced155678ba2b3d71c3b26a5"
+          },
+          {
+            "score": 8.6,
+            "date": "2024-06-01T10:01:52Z",
+            "commit": "dd2e6987cf874b002396a7dabe95028c5c503dd4"
+          }
+        ],
+        "current": {
+          "score": 8.5,
+          "date": "2024-06-12T13:29:15Z",
+          "commit": "dd2e6987cf874b002396a7dabe95028c5c503dd4"
+        }
+      },
+      "dotnet-please": {
+        "previous": [
+          {
+            "score": 8.9,
+            "date": "2024-03-08T15:49:26Z",
+            "commit": "1dd88194617baf392d45a23e3723a8be9fd7c1d3"
+          },
+          {
+            "score": 9,
+            "date": "2024-04-02T07:25:30Z",
+            "commit": "345ec5eab6f6c958a4ffb8cf24e6fb6a8da2979a"
+          },
+          {
+            "score": 8.7,
+            "date": "2024-04-09T07:24:34Z",
+            "commit": "345ec5eab6f6c958a4ffb8cf24e6fb6a8da2979a"
+          }
+        ],
+        "current": {
+          "score": 9.1,
+          "date": "2024-05-01T12:28:17Z",
+          "commit": "9071ab5e05b448edb486944e4e00a58531e3ae4d"
+        }
+      },
+      "Crossroads": {
+        "previous": [
+          {
+            "score": 7.5,
+            "date": "2024-03-06T13:27:59Z",
+            "commit": "54b3923fb58280a06c8da30409721e513fc877f8"
+          },
+          {
+            "score": 7.7,
+            "date": "2024-03-13T13:28:03Z",
+            "commit": "54b3923fb58280a06c8da30409721e513fc877f8"
+          },
+          {
+            "score": 7.4,
+            "date": "2024-03-22T19:16:23Z",
+            "commit": "d7d2ce7fdc4a43014dcda07e0b2c6667fc17b674"
+          },
+          {
+            "score": 7.3,
+            "date": "2024-03-29T19:21:14Z",
+            "commit": "d018d82947353feac9f086067ea160c081f270e1"
+          },
+          {
+            "score": 7.2,
+            "date": "2024-06-12T13:29:50Z",
+            "commit": "ef8726695174330c2579b3fa603c0d3b9ae72b11"
+          }
+        ],
+        "current": {
+          "score": 7.3,
+          "date": "2024-06-21T22:47:00Z",
+          "commit": "7b7d11397db23e67b55782cf60812e0f4c7507c8"
+        }
+      },
+      "ComposeUI": {
+        "previous": [
+          {
+            "score": 7.6,
+            "date": "2024-03-11T15:49:41Z",
+            "commit": "01883627a0f0d7d7f8d0247c2ae7917beabe1066"
+          },
+          {
+            "score": 7.7,
+            "date": "2024-03-12T17:30:30Z",
+            "commit": "01883627a0f0d7d7f8d0247c2ae7917beabe1066"
+          },
+          {
+            "score": 7.5,
+            "date": "2024-03-18T11:02:21Z",
+            "commit": "60df0c4e6e0600687a7d36a33ade40aa577078ae"
+          },
+          {
+            "score": 7.8,
+            "date": "2024-03-27T16:00:22Z",
+            "commit": "5d110bea435f750afa1cb4ecd13a9d6b8ad745de"
+          },
+          {
+            "score": 7.6,
+            "date": "2024-04-02T17:30:22Z",
+            "commit": "44fc77533ff9e0990e95fa68a14e3097dc659069"
+          },
+          {
+            "score": 7.5,
+            "date": "2024-04-11T13:13:16Z",
+            "commit": "2b951cdaf9ca76f883fb29c10ea6af3dd219bcd6"
+          },
+          {
+            "score": 7.7,
+            "date": "2024-05-03T15:23:14Z",
+            "commit": "efe1b02025c3f62304fadf8853b6b30db288ff37"
+          },
+          {
+            "score": 7.8,
+            "date": "2024-06-04T17:29:52Z",
+            "commit": "aab57714ff749fe9394bfc0c53844b8025a058c8"
+          }
+        ],
+        "current": {
+          "score": 7.7,
+          "date": "2024-06-27T12:01:59Z",
+          "commit": "ddecc55ae9af2dcf273ab01da201e16a20fd6d1e"
+        }
+      },
+      "ts-mocking-bird": {
+        "previous": [
+          {
+            "score": 4.8,
+            "date": "2024-03-04",
+            "commit": "f7825fcf2c1bf5de63bada4e6c890e5dbeb0ca22"
+          },
+          {
+            "score": 5.6,
+            "date": "2024-05-06",
+            "commit": "9c3be69cc26549a0a58a45a651f4a5608d2d1824"
+          },
+          {
+            "score": 6,
+            "date": "2024-05-30T09:37:21Z",
+            "commit": "b0da5cdb8e2a473d2d910f103440a43430e465ca"
+          }
+        ],
+        "current": {
+          "score": 6.1,
+          "date": "2024-07-03T13:29:51Z",
+          "commit": "b0da5cdb8e2a473d2d910f103440a43430e465ca"
+        }
+      },
+      "message-broker": {
+        "previous": [
+          {
+            "score": 6.7,
+            "date": "2024-05-01T16:02:55Z",
+            "commit": "8ddb023d59282b7463c6d6f8044b5529f122c8c6"
+          }
+        ],
+        "current": {
+          "score": 6.6,
+          "date": "2024-06-13T14:01:47Z",
+          "commit": "f57e10a2f38ec70f1c5b54791c97e472b38f79a3"
+        }
+      },
+      "testplan": {
+        "previous": [
+          {
+            "score": 6.2,
+            "date": "2024-05-02T07:28:01Z",
+            "commit": "d3e46d6b8657308928486d5481f28a5272bdfe18"
+          }
+        ],
+        "current": {
+          "score": 6.3,
+          "date": "2024-06-06T05:53:51Z",
+          "commit": "5a1e45e1b16810feab863b3918d6c12be508da96"
+        }
+      },
+      "needle": {
+        "previous": [
+          {
+            "score": 5.6,
+            "date": "2024-05-30T10:58:18Z",
+            "commit": "8be415743c390ade27ad92cde18f17cbc486701d"
+          }
+        ],
+        "current": {
+          "score": 5.5,
+          "date": "2024-06-12T13:29:26Z",
+          "commit": "8be415743c390ade27ad92cde18f17cbc486701d"
+        }
+      },
+      "Xpedite": {
+        "previous": [
+          {
+            "score": 4.4,
+            "date": "2024-06-21T15:47:00Z",
+            "commit": "af782fe018690f0a8e9727293b8f68bd7b283952"
+          }
+        ],
+        "current": {
+          "score": 4.9,
+          "date": "2024-07-05T13:48:27Z",
+          "commit": "306e8801884d0838d8cd77ed3bd4991da71b7c85"
+        }
+      },
+      "Plug-in-AppDynamics-Data-Source": {
+        "previous": [
+          {
+            "score": 4.1,
+            "date": "2024-06-27T11:10:29Z",
+            "commit": "6c9ddd879187f222114050a4837c0e74d1cbaef9"
+          }
+        ],
+        "current": {
+          "score": 4.6,
+          "date": "2024-07-10T17:25:45Z",
+          "commit": "358bb9ebe57ece961be43b43130789f15a48d5fe"
+        }
+      },
+      "modern-cpp-kafka": {
+        "previous": [],
+        "current": {
+          "score": 4.4,
+          "date": "2024-07-03T13:28:39Z",
+          "commit": "122678e881de94721458fd948f38e65366b68689"
+        }
+      },
+      "releaseherald": {
+        "previous": [
+          {
+            "score": 5.7,
+            "date": "2024-07-03T13:29:02Z",
+            "commit": "cef3f533b03f551ff0b68c7f9856f21008146d5d"
+          }
+        ],
+        "current": {
+          "score": 5.5,
+          "date": "2024-07-24T13:30:47Z",
+          "commit": "cef3f533b03f551ff0b68c7f9856f21008146d5d"
+        }
+      },
+      "binlog": {
+        "previous": [],
+        "current": {
+          "score": 4.7,
+          "date": "2024-07-10T13:30:30Z",
+          "commit": "6e699068aeacd46e1de48121abdb398ae2256652"
+        }
+      },
+      "gradle-plugin-application": {
+        "previous": [
+          {
+            "score": 3.8,
+            "date": "2024-07-10T16:59:19Z",
+            "commit": "dd07fac568c260bf17ad7ad0ac7bd9f1263e4ac1"
+          }
+        ],
+        "current": {
+          "score": 3.9,
+          "date": "2024-07-17T13:29:28Z",
+          "commit": "dd07fac568c260bf17ad7ad0ac7bd9f1263e4ac1"
+        }
+      }
+    },
+    "morganstanley-labs": {}
+  }
+}

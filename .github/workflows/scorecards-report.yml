@@ -1,0 +1,38 @@
+name: "OpenSSF Scoring"
+on: 
+  # Scheduled trigger
+  schedule:
+    # Run every Sunday at 00:00
+    - cron: "0 0 * * 0"
+  # Manual trigger
+  workflow_dispatch:
+
+permissions:
+  # Write access in order to update the local files with the reports
+  contents: write
+  # Write access only required if creating PRs (see Advanced Tips below)
+  pull-requests: none 
+  # Write access in order to create issues
+  issues: write
+  packages: none
+
+jobs:
+  security-scoring:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: OpenSSF Scorecard Monitor
+        uses: ossf/scorecard-monitor@v2.0.0-beta8
+        id: openssf-scorecard-monitor
+        with:
+          scope: reporting/scope.json
+          database: reporting/database.json
+          report: reporting/openssf-scorecard-report.md
+          auto-commit: true
+          auto-push: true
+          generate-issue: true
+          # The token is needed to create issues, discovery mode and pushing changes in files
+          github-token: ${{ secrets.GH_TOKEN }}
+          discovery-enabled: true
+          # As an example nodejs Org and Myself
+          discovery-orgs: 'morganstanley,morganstanley-labs'
