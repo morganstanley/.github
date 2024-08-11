@@ -182,11 +182,16 @@
             "score": 6,
             "date": "2024-05-30T09:37:21Z",
             "commit": "b0da5cdb8e2a473d2d910f103440a43430e465ca"
+          },
+          {
+            "score": 6.1,
+            "date": "2024-07-03T13:29:51Z",
+            "commit": "b0da5cdb8e2a473d2d910f103440a43430e465ca"
           }
         ],
         "current": {
-          "score": 6.1,
-          "date": "2024-07-03T13:29:51Z",
+          "score": 5.5,
+          "date": "2024-08-07T13:31:25Z",
           "commit": "b0da5cdb8e2a473d2d910f103440a43430e465ca"
         }
       },
@@ -196,12 +201,17 @@
             "score": 6.7,
             "date": "2024-05-01T16:02:55Z",
             "commit": "8ddb023d59282b7463c6d6f8044b5529f122c8c6"
+          },
+          {
+            "score": 6.6,
+            "date": "2024-06-13T14:01:47Z",
+            "commit": "f57e10a2f38ec70f1c5b54791c97e472b38f79a3"
           }
         ],
         "current": {
-          "score": 6.6,
-          "date": "2024-06-13T14:01:47Z",
-          "commit": "f57e10a2f38ec70f1c5b54791c97e472b38f79a3"
+          "score": 7.1,
+          "date": "2024-08-08T08:05:19Z",
+          "commit": "f6033027fbd219dafa3862c9968f312ad8a6ff73"
         }
       },
       "testplan": {
