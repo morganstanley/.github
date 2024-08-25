@@ -158,12 +158,17 @@
             "score": 7.8,
             "date": "2024-06-04T17:29:52Z",
             "commit": "aab57714ff749fe9394bfc0c53844b8025a058c8"
+          },
+          {
+            "score": 7.7,
+            "date": "2024-06-27T12:01:59Z",
+            "commit": "ddecc55ae9af2dcf273ab01da201e16a20fd6d1e"
           }
         ],
         "current": {
-          "score": 7.7,
-          "date": "2024-06-27T12:01:59Z",
-          "commit": "ddecc55ae9af2dcf273ab01da201e16a20fd6d1e"
+          "score": 7.6,
+          "date": "2024-08-22T09:05:27Z",
+          "commit": "7a5c0e92c520f522fa0805bd21414b4bb82feda2"
         }
       },
       "ts-mocking-bird": {
