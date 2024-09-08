@@ -51,12 +51,17 @@
             "score": 8.5,
             "date": "2024-06-12T13:29:15Z",
             "commit": "dd2e6987cf874b002396a7dabe95028c5c503dd4"
+          },
+          {
+            "score": 8.4,
+            "date": "2024-08-28T13:31:15Z",
+            "commit": "a2ced35d2f5d5d6bf1e725dad6ea5860528ce274"
           }
         ],
         "current": {
-          "score": 8.4,
-          "date": "2024-08-28T13:31:15Z",
-          "commit": "a2ced35d2f5d5d6bf1e725dad6ea5860528ce274"
+          "score": 8.6,
+          "date": "2024-09-04T13:33:24Z",
+          "commit": "1402ca5199dc52a84fa7257216248033c3afa217"
         }
       },
       "dotnet-please": {
@@ -119,12 +124,17 @@
             "score": 7.4,
             "date": "2024-08-02T12:31:55Z",
             "commit": "1c10e7ee4d173caed944313a4d37a75210998652"
+          },
+          {
+            "score": 7.3,
+            "date": "2024-08-28T13:31:38Z",
+            "commit": "5186ebd197976458c99cb1ddeac5f2ee7462cfa0"
           }
         ],
         "current": {
-          "score": 7.3,
-          "date": "2024-08-28T13:31:38Z",
-          "commit": "5186ebd197976458c99cb1ddeac5f2ee7462cfa0"
+          "score": 7.2,
+          "date": "2024-09-04T13:34:26Z",
+          "commit": "f037cf8fe2749dcbc2c2e41774344a83ec35d14a"
         }
       },
       "ComposeUI": {
@@ -173,12 +183,17 @@
             "score": 7.7,
             "date": "2024-06-27T12:01:59Z",
             "commit": "ddecc55ae9af2dcf273ab01da201e16a20fd6d1e"
+          },
+          {
+            "score": 7.6,
+            "date": "2024-08-22T09:05:27Z",
+            "commit": "7a5c0e92c520f522fa0805bd21414b4bb82feda2"
           }
         ],
         "current": {
-          "score": 7.6,
-          "date": "2024-08-22T09:05:27Z",
-          "commit": "7a5c0e92c520f522fa0805bd21414b4bb82feda2"
+          "score": 7.7,
+          "date": "2024-09-06T11:33:18Z",
+          "commit": "7c8912281c578ecaed9aaa182e474c4deb981046"
         }
       },
       "ts-mocking-bird": {
