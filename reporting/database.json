@@ -139,12 +139,17 @@
             "score": 7.2,
             "date": "2024-09-04T13:34:26Z",
             "commit": "f037cf8fe2749dcbc2c2e41774344a83ec35d14a"
+          },
+          {
+            "score": 6.8,
+            "date": "2024-09-11T13:33:41Z",
+            "commit": "f037cf8fe2749dcbc2c2e41774344a83ec35d14a"
           }
         ],
         "current": {
-          "score": 6.8,
-          "date": "2024-09-11T13:33:41Z",
-          "commit": "f037cf8fe2749dcbc2c2e41774344a83ec35d14a"
+          "score": 7,
+          "date": "2024-09-18T13:35:24Z",
+          "commit": "9e5541f5f9d7ba924ebb185c00ec1523e466aa79"
         }
       },
       "ComposeUI": {
@@ -203,12 +208,17 @@
             "score": 7.7,
             "date": "2024-09-06T11:33:18Z",
             "commit": "7c8912281c578ecaed9aaa182e474c4deb981046"
+          },
+          {
+            "score": 7.4,
+            "date": "2024-09-12T14:19:05Z",
+            "commit": "26933d3a61c1256451ca63edef2c7a89fe3cd6b7"
           }
         ],
         "current": {
-          "score": 7.4,
-          "date": "2024-09-12T14:19:05Z",
-          "commit": "26933d3a61c1256451ca63edef2c7a89fe3cd6b7"
+          "score": 7.2,
+          "date": "2024-09-18T09:50:48Z",
+          "commit": "53e63b5e0ad9702e6dec1d8f6454701a977dd439"
         }
       },
       "ts-mocking-bird": {
