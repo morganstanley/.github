@@ -66,12 +66,17 @@
             "score": 8.5,
             "date": "2024-09-11T13:32:45Z",
             "commit": "1402ca5199dc52a84fa7257216248033c3afa217"
+          },
+          {
+            "score": 8.4,
+            "date": "2024-09-25T13:37:00Z",
+            "commit": "1402ca5199dc52a84fa7257216248033c3afa217"
           }
         ],
         "current": {
-          "score": 8.4,
-          "date": "2024-09-25T13:37:00Z",
-          "commit": "1402ca5199dc52a84fa7257216248033c3afa217"
+          "score": 8.2,
+          "date": "2024-10-02T13:35:13Z",
+          "commit": "a811a9c149813a569b44b11afa987214cd55f268"
         }
       },
       "dotnet-please": {
@@ -247,12 +252,17 @@
             "score": 6.1,
             "date": "2024-07-03T13:29:51Z",
             "commit": "b0da5cdb8e2a473d2d910f103440a43430e465ca"
+          },
+          {
+            "score": 5.5,
+            "date": "2024-08-07T13:31:25Z",
+            "commit": "b0da5cdb8e2a473d2d910f103440a43430e465ca"
           }
         ],
         "current": {
-          "score": 5.5,
-          "date": "2024-08-07T13:31:25Z",
-          "commit": "b0da5cdb8e2a473d2d910f103440a43430e465ca"
+          "score": 8.2,
+          "date": "2024-10-04T14:01:21Z",
+          "commit": "92f0d43e61fece9c266b4c95d880da9ec6712258"
         }
       },
       "message-broker": {
@@ -281,12 +291,17 @@
             "score": 6.5,
             "date": "2024-09-11T13:32:36Z",
             "commit": "4013afc683d5e4ae1a2fd01e4d829b53b2b97c00"
+          },
+          {
+            "score": 6.6,
+            "date": "2024-09-25T13:36:29Z",
+            "commit": "777758e3f61f60465339ad365812c0f9b5d7dbc0"
           }
         ],
         "current": {
-          "score": 6.6,
-          "date": "2024-09-25T13:36:29Z",
-          "commit": "777758e3f61f60465339ad365812c0f9b5d7dbc0"
+          "score": 6.9,
+          "date": "2024-10-02T13:34:58Z",
+          "commit": "f70f908c2e7640a56059c825001067b85d671b1c"
         }
       },
       "testplan": {
@@ -371,10 +386,16 @@
         }
       },
       "modern-cpp-kafka": {
-        "previous": [],
+        "previous": [
+          {
+            "score": 4.4,
+            "date": "2024-07-03T13:28:39Z",
+            "commit": "122678e881de94721458fd948f38e65366b68689"
+          }
+        ],
         "current": {
-          "score": 4.4,
-          "date": "2024-07-03T13:28:39Z",
+          "score": 4.2,
+          "date": "2024-10-02T13:34:11Z",
           "commit": "122678e881de94721458fd948f38e65366b68689"
         }
       },
@@ -398,11 +419,16 @@
             "score": 4.7,
             "date": "2024-07-10T13:30:30Z",
             "commit": "6e699068aeacd46e1de48121abdb398ae2256652"
+          },
+          {
+            "score": 4.8,
+            "date": "2024-07-31T13:30:03Z",
+            "commit": "3f5bc950d481d768505c3694243bdefaddfbd6b5"
           }
         ],
         "current": {
-          "score": 4.8,
-          "date": "2024-07-31T13:30:03Z",
+          "score": 4.9,
+          "date": "2024-10-02T13:36:29Z",
           "commit": "3f5bc950d481d768505c3694243bdefaddfbd6b5"
         }
       },
