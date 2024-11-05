@@ -1,0 +1,41 @@
+name: Daily Repo Stats Collection
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 23 * * *'
+
+permissions:
+  # Write access in order to update the local files with the reports
+  contents: write
+  # Write access only required if creating PRs (see Advanced Tips below)
+  pull-requests: none 
+  # Write access in order to create issues
+  packages: none
+
+jobs:
+  repo_stats:
+    name: GitHub Repo Stats
+    runs-on: ubutun-latest
+    strategy:
+      matrix:
+        statsRepo: ['morganstanley/MSML', 'morganstanley/ComposeUI','morganstanley/hobbes','morganstanley/binlog','morganstanley/modern-cpp-kafka','morganstanley/testplan','morganstanley/Xpedite','morganstanley/optimus-cirrus','morganstanley/ts-mocking-bird','morganstanley/message-broker','morganstanley/eslint-plugin-externalincludes','morganstanley/Crossroads','morganstanley/needle','morganstanley/dotnet-please''morganstanley/desktopJS','morganstanley/cps-training','morganstanley/api','morganstanley/releaseherald','morganstanley/needle']
+    steps:
+      - name: github-repo-stats
+        id: github-repo-stats
+
+        # You may pin to the exact commit or the version.
+        # uses: jgehrcke/github-repo-stats@306db38ad131cab2aa5f2cd3062bf6f8aa78c1aa
+        uses: jgehrcke/github-repo-stats@v1.4.2
+        with:
+          # Repository spec (<owner-or-org>/<reponame>) for the repository to fetch statistics for.
+          repository: ${{ matrix.statsRepo }}
+
+          # GitHub API token for reading the GitHub repository traffic API and for interacting with the data repo. Required.
+          ghtoken: ${{ secrets.GH_TOKEN }}
+        
+          # Data branch: Branch to push data to (in the data repo).
+          #databranch: # optional, default is github-repo-stats
+  
+          # Set this if the data branch in the data repo is exposed via GitHub pages. Must not end with a slash. Example: https://jgehrcke.github.io/ghrs-test
+          #ghpagesprefix: # optional, default is none
+          
