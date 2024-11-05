@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/Crossroads,9,7
+/morganstanley/Crossroads/pulls,9,4
+/morganstanley/Crossroads/pull/296,7,2
+/morganstanley/Crossroads/pull/295,5,3
+/morganstanley/Crossroads/pull/306,4,2
+/morganstanley/Crossroads/pull/303,4,1
+/morganstanley/Crossroads/pull/304,2,2
+/morganstanley/Crossroads/blob/migrate-dotnet-tool/src/Crossroads/Services/AppHostService.cs,2,1
+/morganstanley/Crossroads/compare/main...mimiflynn:Crossroads:main,2,1
+/morganstanley/Crossroads/pull/296/files,2,1
