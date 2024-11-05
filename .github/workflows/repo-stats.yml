@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        statsRepo: ['morganstanley/MSML', 'morganstanley/ComposeUI','morganstanley/hobbes','morganstanley/binlog','morganstanley/modern-cpp-kafka','morganstanley/testplan','morganstanley/Xpedite','morganstanley/optimus-cirrus','morganstanley/ts-mocking-bird','morganstanley/message-broker','morganstanley/eslint-plugin-externalincludes','morganstanley/Crossroads','morganstanley/needle','morganstanley/dotnet-please''morganstanley/desktopJS','morganstanley/cps-training','morganstanley/api','morganstanley/releaseherald','morganstanley/needle']
+        statsRepo: ['morganstanley/MSML','morganstanley/ComposeUI','morganstanley/hobbes','morganstanley/binlog','morganstanley/modern-cpp-kafka','morganstanley/testplan','morganstanley/Xpedite','morganstanley/optimus-cirrus','morganstanley/ts-mocking-bird','morganstanley/message-broker','morganstanley/eslint-plugin-externalincludes','morganstanley/Crossroads','morganstanley/needle','morganstanley/dotnet-please','morganstanley/desktopJS','morganstanley/cps-training','morganstanley/api','morganstanley/releaseherald','morganstanley/needle']
     steps:
       - name: github-repo-stats
         id: github-repo-stats
