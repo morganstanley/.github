@@ -1,8 +1,8 @@
-name: Daily Repo Stats Collection
+name: Weekly Repo Stats Collection
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '0 23 * * 6' # Saturday
 
 permissions:
   # Write access in order to update the local files with the reports
