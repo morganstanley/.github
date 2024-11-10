@@ -17,12 +17,17 @@
             "score": 7.8,
             "date": "2024-03-20T13:27:56Z",
             "commit": "1daa24d376075c08ff6c76142724cfc523026dfc"
+          },
+          {
+            "score": 8.5,
+            "date": "2024-11-01T18:26:08Z",
+            "commit": "bd78a71345ca7ca4e8267e793734bceac36b3487"
           }
         ],
         "current": {
-          "score": 8.5,
-          "date": "2024-11-01T18:26:08Z",
-          "commit": "bd78a71345ca7ca4e8267e793734bceac36b3487"
+          "score": 8.6,
+          "date": "2024-11-07T23:00:54Z",
+          "commit": "6845a7df1707179942dde179f8c5de87a2ee666b"
         }
       },
       "desktopJS": {
@@ -243,12 +248,17 @@
             "score": 7.2,
             "date": "2024-09-18T09:50:48Z",
             "commit": "53e63b5e0ad9702e6dec1d8f6454701a977dd439"
+          },
+          {
+            "score": 7.5,
+            "date": "2024-10-08T17:34:07Z",
+            "commit": "1e43be727007b16e5b7f061878238bf95fb465c1"
           }
         ],
         "current": {
-          "score": 7.5,
-          "date": "2024-10-08T17:34:07Z",
-          "commit": "1e43be727007b16e5b7f061878238bf95fb465c1"
+          "score": 7.7,
+          "date": "2024-11-07T12:31:35Z",
+          "commit": "1ae17bcad1a430bbc2c9de26ddeb375089551416"
         }
       },
       "ts-mocking-bird": {
