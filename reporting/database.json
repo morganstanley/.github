@@ -379,12 +379,17 @@
             "score": 5.2,
             "date": "2024-09-11T13:33:04Z",
             "commit": "8be415743c390ade27ad92cde18f17cbc486701d"
+          },
+          {
+            "score": 5.1,
+            "date": "2024-10-09T13:37:34Z",
+            "commit": "8be415743c390ade27ad92cde18f17cbc486701d"
           }
         ],
         "current": {
-          "score": 5.1,
-          "date": "2024-10-09T13:37:34Z",
-          "commit": "8be415743c390ade27ad92cde18f17cbc486701d"
+          "score": 7,
+          "date": "2024-11-14T21:48:26Z",
+          "commit": "115c305d6bbe0daa69fa5f666b3c079642cc60a2"
         }
       },
       "Xpedite": {
