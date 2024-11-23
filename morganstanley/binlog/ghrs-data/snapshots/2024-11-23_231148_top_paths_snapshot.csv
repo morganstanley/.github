@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,113,78
+/morganstanley/binlog/tree/main/include,17,10
+/morganstanley/binlog/tree/main/include/binlog,13,8
+/morganstanley/binlog/blob/main/INSTALL.md,9,5
+/morganstanley/binlog/tree/main,9,5
+/morganstanley/binlog/blob/4cd8f78cfa371921583fa94132b10d68b50f0242/include/binlog/create_source_and_event.hpp,4,4
+/morganstanley/binlog/issues,4,4
+/morganstanley/binlog/issues/129,4,4
+/morganstanley/binlog/tree/main/example,4,3
+/morganstanley/binlog/blob/main/include/binlog/binlog.hpp,3,3
