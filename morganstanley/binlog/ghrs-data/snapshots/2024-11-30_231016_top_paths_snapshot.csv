@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,141,81
+/morganstanley/binlog/tree/main,25,10
+/morganstanley/binlog/tree/main/include,24,15
+/morganstanley/binlog/blob/main/INSTALL.md,17,9
+/morganstanley/binlog/tree/main/include/binlog,13,9
+/morganstanley/binlog/tree/main/example,11,7
+/morganstanley/binlog/tree/main/bin,11,5
+/morganstanley/binlog/issues,8,7
+/morganstanley/binlog/tree/main/include/mserialize,8,6
+/morganstanley/binlog/blob/main/include/binlog/binlog.hpp,6,4
