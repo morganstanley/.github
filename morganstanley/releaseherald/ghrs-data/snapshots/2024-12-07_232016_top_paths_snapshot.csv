@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald,15,11
+/morganstanley/releaseherald/pulls,5,2
+/morganstanley/releaseherald/blob/main/dodo.py,5,1
+/morganstanley/releaseherald/blob/main/.github/workflows/release.yml,2,2
+/morganstanley/releaseherald/tree/main/.github,2,2
+/morganstanley/releaseherald/blob/main/.github/dependabot.yml,1,1
+/morganstanley/releaseherald/blob/main/tests/conftest.py,1,1
+/morganstanley/releaseherald/blob/main/tests/test_repo.pack,1,1
+/morganstanley/releaseherald/graphs/commit-activity,1,1
+/morganstanley/releaseherald/tree/main/.github/workflows,1,1
