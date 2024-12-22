@@ -396,11 +396,16 @@
             "score": 6.8,
             "date": "2024-12-06T13:22:24Z",
             "commit": "31e38528ea21b5b31a73126a73a287ea4a78fe3a"
+          },
+          {
+            "score": 6.6,
+            "date": "2024-12-11T13:40:08Z",
+            "commit": "31e38528ea21b5b31a73126a73a287ea4a78fe3a"
           }
         ],
         "current": {
-          "score": 6.6,
-          "date": "2024-12-11T13:40:08Z",
+          "score": 6.7,
+          "date": "2024-12-18T13:37:07Z",
           "commit": "31e38528ea21b5b31a73126a73a287ea4a78fe3a"
         }
       },
