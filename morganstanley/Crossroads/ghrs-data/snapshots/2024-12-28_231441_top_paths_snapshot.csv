@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/Crossroads,7,6
+/morganstanley/Crossroads/issues,3,1
+/morganstanley/Crossroads/blob/659752a168eefea3d9d6782bf271a71c2f061571/site/package.json,2,1
+/morganstanley/Crossroads/blob/main/src/Crossroads/Commands/InspectCommand.cs,2,1
+/morganstanley/Crossroads/blob/migrate-dotnet-tool/src/Crossroads/Services/AppHostService.cs,2,1
+/morganstanley/Crossroads/tree/main/src,2,1
+/morganstanley/Crossroads/tree/main/src/Crossroads,2,1
+/morganstanley/Crossroads/tree/main/src/Crossroads/Commands,2,1
+/morganstanley/Crossroads/blob/main/src/Crossroads/Services/InspectService.cs,1,1
+/morganstanley/Crossroads/tree/main,1,1
