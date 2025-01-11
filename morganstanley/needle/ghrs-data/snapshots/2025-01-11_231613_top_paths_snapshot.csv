@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/needle,20,15
+/morganstanley/needle/tree/main/main,4,2
+/morganstanley/needle/blob/main/main/core/injector.ts,4,1
+/morganstanley/needle/blob/main/main/annotations/injectable.ts,3,1
+/morganstanley/needle/blob/main/main/index.ts,3,1
+/morganstanley/needle/tree/main/main/annotations,3,1
+/morganstanley/needle/blob/main/.github/workflows/create-release.yaml,2,1
+/morganstanley/needle/blob/main/main/annotations/inject.ts,2,1
+/morganstanley/needle/blob/main/main/core/globals.ts,2,1
+/morganstanley/needle/blob/main/main/core/util.functions.ts,2,1
