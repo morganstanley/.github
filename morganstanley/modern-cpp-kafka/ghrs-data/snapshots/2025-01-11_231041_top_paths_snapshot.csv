@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/modern-cpp-kafka,293,173
+/morganstanley/modern-cpp-kafka/tree/main/include/kafka,30,17
+/morganstanley/modern-cpp-kafka/tree/main/include,23,14
+/morganstanley/modern-cpp-kafka/tree/main/examples,18,12
+/morganstanley/modern-cpp-kafka/tree/main,18,8
+/morganstanley/modern-cpp-kafka/blob/main/examples/kafka_async_producer_copy_payload.cc,15,4
+/morganstanley/modern-cpp-kafka/blob/main/examples/example_KafkaProducer_Simple.cc,14,6
+/morganstanley/modern-cpp-kafka/releases,9,8
+/morganstanley/modern-cpp-kafka/releases/tag/v2024.07.03,9,7
+/morganstanley/modern-cpp-kafka/blob/main/examples/example_KafkaConsumer_Simple.cc,9,4
