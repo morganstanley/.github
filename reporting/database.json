@@ -421,12 +421,17 @@
             "score": 6.7,
             "date": "2024-12-18T13:37:07Z",
             "commit": "31e38528ea21b5b31a73126a73a287ea4a78fe3a"
+          },
+          {
+            "score": 6.8,
+            "date": "2025-01-02T10:51:24Z",
+            "commit": "25a30ad62bf5de397771b75722a222c9398a6c5b"
           }
         ],
         "current": {
-          "score": 6.8,
-          "date": "2025-01-02T10:51:24Z",
-          "commit": "25a30ad62bf5de397771b75722a222c9398a6c5b"
+          "score": 7,
+          "date": "2025-01-15T13:32:06Z",
+          "commit": "bc35af3765418a140137f41783208a419613fbf2"
         }
       },
       "testplan": {
