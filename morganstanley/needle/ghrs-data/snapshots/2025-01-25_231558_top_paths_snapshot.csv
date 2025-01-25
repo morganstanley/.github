@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/needle,26,18
+/morganstanley/needle/blob/main/main/core/factory.ts,6,5
+/morganstanley/needle/blob/main/main/core/injector.ts,2,2
+/morganstanley/needle/tree/main/main,2,2
+/morganstanley/needle/commit/704f859e95821b53cf9f8cc55d2af07b01e6c2e2,2,1
+/morganstanley/needle/compare/main...Davidhanson90:needle:main,2,1
+/morganstanley/needle/fork,2,1
+/morganstanley/needle/tree/main/.github/workflows,2,1
+/morganstanley/needle/blob/e917a6f2da8365098c53e670693847b9827b1dc2/package.json,1,1
+/morganstanley/needle/blob/main/.github/workflows/test-typescript.yml,1,1
