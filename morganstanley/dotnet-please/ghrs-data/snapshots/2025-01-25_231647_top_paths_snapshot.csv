@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/dotnet-please,16,10
+/morganstanley/dotnet-please/actions/runs/12401001535/job/34619416969,6,3
+/morganstanley/dotnet-please/pulls,4,3
+/morganstanley/dotnet-please/blob/main/DotNetPlease/DotNetPlease.csproj,4,2
+/morganstanley/dotnet-please/pull/116,3,2
+/morganstanley/dotnet-please/blob/main/build-and-install.ps1,3,1
+/morganstanley/dotnet-please/actions,2,2
+/morganstanley/dotnet-please/pull/116/checks,2,1
+/morganstanley/dotnet-please/pull/116/commits,2,1
+/morganstanley/dotnet-please/actions/runs/12401001535,1,1
