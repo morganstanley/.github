@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/ts-mocking-bird,24,10
+/morganstanley/ts-mocking-bird/pulls,14,3
+/morganstanley/ts-mocking-bird/actions/workflows/test-typescript.yml,12,1
+/morganstanley/ts-mocking-bird/actions/workflows/codeql.yml,11,1
+/morganstanley/ts-mocking-bird/actions/workflows/test-jasmine.yml,11,1
+/morganstanley/ts-mocking-bird/commits/main,11,1
+/morganstanley/ts-mocking-bird/actions/workflows/test-jest.yml,10,1
+/morganstanley/ts-mocking-bird/actions,9,1
+/morganstanley/ts-mocking-bird/pull/151,9,1
+/morganstanley/ts-mocking-bird/actions/workflows/build.yml,8,1
