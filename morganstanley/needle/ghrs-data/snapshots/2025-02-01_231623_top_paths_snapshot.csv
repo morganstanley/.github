@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/needle,37,15
+/morganstanley/needle/blob/main/main/core/factory.ts,10,5
+/morganstanley/needle/pull/109,10,3
+/morganstanley/needle/pulls,9,4
+/morganstanley/needle/actions,9,3
+/morganstanley/needle/actions/workflows/create-release.yaml,9,3
+/morganstanley/needle/tree/main/.github/workflows,8,3
+/morganstanley/needle/actions/runs/12986975664,5,3
+/morganstanley/needle/actions/runs/12986975664/job/36214898249,5,2
+/morganstanley/needle/fork,5,1
