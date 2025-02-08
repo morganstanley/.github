@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/cpx-training,32,16
+/morganstanley/cpx-training/pull/169,22,5
+/morganstanley/cpx-training/pulls,13,4
+/morganstanley/cpx-training/pull/169/files,9,3
+/morganstanley/cpx-training/pull/155,3,3
+/morganstanley/cpx-training/actions/runs/12953120919/job/36132050387,3,1
+/morganstanley/cpx-training/pull/169/commits,2,2
+/morganstanley/cpx-training/pull/170,2,2
+/morganstanley/cpx-training/blob/53313f2ccc5cd18ac612ab1df06a7aac8604a49d/site/package.json,2,1
+/morganstanley/cpx-training/blob/0afe8fd5cc47cd65cf84ae8e108bc110b74c6c72/.github/workflows/pr-build.yml,1,1
