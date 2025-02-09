@@ -120,12 +120,17 @@
             "score": 8.7,
             "date": "2024-04-09T07:24:34Z",
             "commit": "345ec5eab6f6c958a4ffb8cf24e6fb6a8da2979a"
+          },
+          {
+            "score": 9.1,
+            "date": "2024-05-01T12:28:17Z",
+            "commit": "9071ab5e05b448edb486944e4e00a58531e3ae4d"
           }
         ],
         "current": {
-          "score": 9.1,
-          "date": "2024-05-01T12:28:17Z",
-          "commit": "9071ab5e05b448edb486944e4e00a58531e3ae4d"
+          "score": 8.4,
+          "date": "2025-02-04T07:28:07Z",
+          "commit": "17cb961bfb33948d7c38f881bf78d4500371d7c6"
         }
       },
       "Crossroads": {
@@ -362,12 +367,17 @@
             "score": 7.9,
             "date": "2024-12-04T13:40:31Z",
             "commit": "f0db479063beba2d02f3f5271c492bafef8cf129"
+          },
+          {
+            "score": 8.2,
+            "date": "2025-02-02T00:35:48Z",
+            "commit": "afb744a81dacca16a0bf35f4bd346d22d0035564"
           }
         ],
         "current": {
-          "score": 8.2,
-          "date": "2025-02-02T00:35:48Z",
-          "commit": "afb744a81dacca16a0bf35f4bd346d22d0035564"
+          "score": 8.1,
+          "date": "2025-02-05T14:34:14Z",
+          "commit": "4ec26867f9870183d35937835c4b0ac30f164058"
         }
       },
       "message-broker": {
@@ -514,12 +524,17 @@
             "score": 7.5,
             "date": "2024-12-04T13:39:07Z",
             "commit": "076a41867da69896983cd21361e33ef5e42c7fe9"
+          },
+          {
+            "score": 7.8,
+            "date": "2025-02-01T23:55:45Z",
+            "commit": "5054f85186febf6dc59700398bc6e050c3f5eb7e"
           }
         ],
         "current": {
-          "score": 7.8,
-          "date": "2025-02-01T23:55:45Z",
-          "commit": "5054f85186febf6dc59700398bc6e050c3f5eb7e"
+          "score": 8.5,
+          "date": "2025-02-05T13:31:39Z",
+          "commit": "969e344017449880ad6b06434d81f7693fc0ebb5"
         }
       },
       "Xpedite": {
