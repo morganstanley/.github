@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,117,85
+/morganstanley/binlog/blob/main/example/HelloWorld.cpp,17,5
+/morganstanley/binlog/tree/main/example,15,8
+/morganstanley/binlog/blob/main/bin/bread.cpp,15,7
+/morganstanley/binlog/blob/main/bin/printers.cpp,12,2
+/morganstanley/binlog/tree/main/include,11,9
+/morganstanley/binlog/blob/main/test/perf/PerftestSessionWriter.cpp,10,4
+/morganstanley/binlog/tree/main/include/binlog,9,8
+/morganstanley/binlog/blob/main/include/binlog/Session.hpp,9,4
+/morganstanley/binlog/tree/main,8,6
