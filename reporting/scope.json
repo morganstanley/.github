@@ -16,7 +16,8 @@
         "modern-cpp-kafka",
         "releaseherald",
         "binlog",
-        "gradle-plugin-application"
+        "gradle-plugin-application",
+        "fdc3-web"
       ],
       "excluded": []
     },

@@ -333,12 +333,17 @@
             "score": 6.5,
             "date": "2025-01-24T17:07:59Z",
             "commit": "770226e1bb64d694e53330636dbb117afe6be1c8"
+          },
+          {
+            "score": 6.4,
+            "date": "2025-02-11T17:34:08Z",
+            "commit": "58571cfa36aecc775cb99d76244078d644863cae"
           }
         ],
         "current": {
-          "score": 6.4,
-          "date": "2025-02-11T17:34:08Z",
-          "commit": "58571cfa36aecc775cb99d76244078d644863cae"
+          "score": 6.2,
+          "date": "2025-02-20T15:52:38Z",
+          "commit": "bb3c3d18742501b4e4f27c96bda4b08975566c05"
         }
       },
       "ts-mocking-bird": {
@@ -679,6 +684,14 @@
           "score": 3.9,
           "date": "2024-07-17T13:29:28Z",
           "commit": "dd07fac568c260bf17ad7ad0ac7bd9f1263e4ac1"
+        }
+      },
+      "fdc3-web": {
+        "previous": [],
+        "current": {
+          "score": 6.7,
+          "date": "2025-02-21T19:14:45Z",
+          "commit": "e93cdb25fdf2a78bb60a65929feffd9a62f0e2ac"
         }
       }
     },
