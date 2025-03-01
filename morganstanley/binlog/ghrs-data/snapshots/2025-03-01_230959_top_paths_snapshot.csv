@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,141,104
+/morganstanley/binlog/blob/main/bin/bread.cpp,24,8
+/morganstanley/binlog/blob/main/example/HelloWorld.cpp,23,6
+/morganstanley/binlog/blob/main/include/binlog/Session.hpp,22,1
+/morganstanley/binlog/blob/main/bin/printers.cpp,18,3
+/morganstanley/binlog/tree/main,17,7
+/morganstanley/binlog/tree/main/example,14,10
+/morganstanley/binlog/blob/main/example/LogRotation.cpp,11,3
+/morganstanley/binlog/issues,10,6
+/morganstanley/binlog/blob/main/example/MultiOutput.cpp,10,5
