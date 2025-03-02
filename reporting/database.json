@@ -229,12 +229,17 @@
             "score": 7.3,
             "date": "2025-01-10T20:15:16Z",
             "commit": "5a63cbb406deb076d6adc9ece6f797486c31afc6"
+          },
+          {
+            "score": 7.2,
+            "date": "2025-02-12T13:34:33Z",
+            "commit": "922b80fb3ebe514c9ff29a42e6e82c4fdae6bbfe"
           }
         ],
         "current": {
-          "score": 7.2,
-          "date": "2025-02-12T13:34:33Z",
-          "commit": "922b80fb3ebe514c9ff29a42e6e82c4fdae6bbfe"
+          "score": 6.9,
+          "date": "2025-03-01T12:05:33Z",
+          "commit": "bbcd47263e6ecc3b02d6980b0689ab60c7bc1c26"
         }
       },
       "ComposeUI": {
@@ -338,12 +343,17 @@
             "score": 6.4,
             "date": "2025-02-11T17:34:08Z",
             "commit": "58571cfa36aecc775cb99d76244078d644863cae"
+          },
+          {
+            "score": 6.2,
+            "date": "2025-02-20T15:52:38Z",
+            "commit": "bb3c3d18742501b4e4f27c96bda4b08975566c05"
           }
         ],
         "current": {
-          "score": 6.2,
-          "date": "2025-02-20T15:52:38Z",
-          "commit": "bb3c3d18742501b4e4f27c96bda4b08975566c05"
+          "score": 7.2,
+          "date": "2025-03-01T20:27:19Z",
+          "commit": "6403dc498817c7cee89d8133b3faecec79fd86fb"
         }
       },
       "ts-mocking-bird": {
@@ -476,11 +486,16 @@
             "score": 7,
             "date": "2025-01-15T13:32:06Z",
             "commit": "bc35af3765418a140137f41783208a419613fbf2"
+          },
+          {
+            "score": 6.9,
+            "date": "2025-02-13T11:45:36Z",
+            "commit": "31494f231181d5ee3d603ed3a5a19cb56049c9a9"
           }
         ],
         "current": {
-          "score": 6.9,
-          "date": "2025-02-13T11:45:36Z",
+          "score": 7,
+          "date": "2025-02-26T13:34:47Z",
           "commit": "31494f231181d5ee3d603ed3a5a19cb56049c9a9"
         }
       },
@@ -687,11 +702,17 @@
         }
       },
       "fdc3-web": {
-        "previous": [],
+        "previous": [
+          {
+            "score": 6.7,
+            "date": "2025-02-21T19:14:45Z",
+            "commit": "e93cdb25fdf2a78bb60a65929feffd9a62f0e2ac"
+          }
+        ],
         "current": {
-          "score": 6.7,
-          "date": "2025-02-21T19:14:45Z",
-          "commit": "e93cdb25fdf2a78bb60a65929feffd9a62f0e2ac"
+          "score": 6.8,
+          "date": "2025-03-01T20:56:53Z",
+          "commit": "25ba894a3aff9ac7138bddade2c208aa52bf83cc"
         }
       }
     },
