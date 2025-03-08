@@ -1,0 +1,5 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald,2,2
+/morganstanley/releaseherald/actions/workflows/release.yml,2,1
+/morganstanley/releaseherald/actions,1,1
+/morganstanley/releaseherald/blob/e2af14ab03a5fe49bd6bbc26644608fe30f4c061/.github/workflows/release.yml,1,1
