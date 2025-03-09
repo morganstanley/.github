@@ -234,12 +234,17 @@
             "score": 7.2,
             "date": "2025-02-12T13:34:33Z",
             "commit": "922b80fb3ebe514c9ff29a42e6e82c4fdae6bbfe"
+          },
+          {
+            "score": 6.9,
+            "date": "2025-03-01T12:05:33Z",
+            "commit": "bbcd47263e6ecc3b02d6980b0689ab60c7bc1c26"
           }
         ],
         "current": {
-          "score": 6.9,
-          "date": "2025-03-01T12:05:33Z",
-          "commit": "bbcd47263e6ecc3b02d6980b0689ab60c7bc1c26"
+          "score": 7.1,
+          "date": "2025-03-05T13:37:34Z",
+          "commit": "b4229f648c36703736e5be38c3caf284af75eebd"
         }
       },
       "ComposeUI": {
@@ -348,12 +353,17 @@
             "score": 6.2,
             "date": "2025-02-20T15:52:38Z",
             "commit": "bb3c3d18742501b4e4f27c96bda4b08975566c05"
+          },
+          {
+            "score": 7.2,
+            "date": "2025-03-01T20:27:19Z",
+            "commit": "6403dc498817c7cee89d8133b3faecec79fd86fb"
           }
         ],
         "current": {
-          "score": 7.2,
-          "date": "2025-03-01T20:27:19Z",
-          "commit": "6403dc498817c7cee89d8133b3faecec79fd86fb"
+          "score": 6.9,
+          "date": "2025-03-07T20:20:55Z",
+          "commit": "ee0b629ba52133a01b1ce165f8239472345ee1e8"
         }
       },
       "ts-mocking-bird": {
@@ -407,12 +417,17 @@
             "score": 8.1,
             "date": "2025-02-05T14:34:14Z",
             "commit": "4ec26867f9870183d35937835c4b0ac30f164058"
+          },
+          {
+            "score": 8,
+            "date": "2025-02-12T13:33:13Z",
+            "commit": "4ec26867f9870183d35937835c4b0ac30f164058"
           }
         ],
         "current": {
-          "score": 8,
-          "date": "2025-02-12T13:33:13Z",
-          "commit": "4ec26867f9870183d35937835c4b0ac30f164058"
+          "score": 8.2,
+          "date": "2025-03-05T13:36:04Z",
+          "commit": "d6524d05a8935e63e11821cd6f483fbe0e68714b"
         }
       },
       "message-broker": {
@@ -491,12 +506,17 @@
             "score": 6.9,
             "date": "2025-02-13T11:45:36Z",
             "commit": "31494f231181d5ee3d603ed3a5a19cb56049c9a9"
+          },
+          {
+            "score": 7,
+            "date": "2025-02-26T13:34:47Z",
+            "commit": "31494f231181d5ee3d603ed3a5a19cb56049c9a9"
           }
         ],
         "current": {
-          "score": 7,
-          "date": "2025-02-26T13:34:47Z",
-          "commit": "31494f231181d5ee3d603ed3a5a19cb56049c9a9"
+          "score": 6.9,
+          "date": "2025-03-05T13:35:58Z",
+          "commit": "4e4d9e51c2979d9b31417ba996f78f0edd73095e"
         }
       },
       "testplan": {
@@ -707,12 +727,17 @@
             "score": 6.7,
             "date": "2025-02-21T19:14:45Z",
             "commit": "e93cdb25fdf2a78bb60a65929feffd9a62f0e2ac"
+          },
+          {
+            "score": 6.8,
+            "date": "2025-03-01T20:56:53Z",
+            "commit": "25ba894a3aff9ac7138bddade2c208aa52bf83cc"
           }
         ],
         "current": {
-          "score": 6.8,
-          "date": "2025-03-01T20:56:53Z",
-          "commit": "25ba894a3aff9ac7138bddade2c208aa52bf83cc"
+          "score": 7.8,
+          "date": "2025-03-08T20:02:46Z",
+          "commit": "b3b9d1592cc506e9b398cb79434671e3de6c6b45"
         }
       }
     },
