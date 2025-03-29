@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,131,100
+/morganstanley/binlog/blob/main/INSTALL.md,22,16
+/morganstanley/binlog/blob/main/example/HelloWorld.cpp,19,7
+/morganstanley/binlog/tree/main/example,13,10
+/morganstanley/binlog/blob/main/example/ConsumeLoop.cpp,11,6
+/morganstanley/binlog/tree/main/include/binlog,9,7
+/morganstanley/binlog/blob/main/include/binlog/basic_log_macros.hpp,9,3
+/morganstanley/binlog/blob/main/bin/bread.cpp,8,7
+/morganstanley/binlog/tree/main/bin,7,7
+/morganstanley/binlog/commits/main,7,4
