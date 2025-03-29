@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/message-broker,17,15
+/morganstanley/message-broker/pulls,6,3
+/morganstanley/message-broker/pull/199,5,2
+/morganstanley/message-broker/pull/199/files,3,2
+/morganstanley/message-broker/tree/main,2,2
+/morganstanley/message-broker/tree/main/main,2,2
+/morganstanley/message-broker/pull/198,2,1
+/morganstanley/message-broker/pull/202,2,1
+/morganstanley/message-broker/actions,1,1
+/morganstanley/message-broker/actions/workflows/deploy-site.yml,1,1
