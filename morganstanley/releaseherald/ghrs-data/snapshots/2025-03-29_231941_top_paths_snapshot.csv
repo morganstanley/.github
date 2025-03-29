@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald/blob/main/pyproject.toml,11,2
+/morganstanley/releaseherald/blob/main/release_notes/news_fragments/initial_release.md,4,2
+/morganstanley/releaseherald/blob/main/release_notes/release_notes.template.md,4,2
+/morganstanley/releaseherald/blob/main/example_plugin/setup.cfg,3,2
+/morganstanley/releaseherald/blob/main/release_notes/release_notes_version.template.md,3,2
+/morganstanley/releaseherald/blob/main/src/releaseherald/templates/news.rst,3,2
+/morganstanley/releaseherald/blob/main/example_plugin/pyproject.toml,3,1
+/morganstanley/releaseherald/blob/main/mypy.ini,3,1
+/morganstanley/releaseherald/blob/main/README.md,3,1
+/morganstanley/releaseherald/tree/main/release_notes,2,2
