@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/api/tree/main/client-samples,52,22
+/morganstanley/api,48,27
+/morganstanley/api/tree/main/client-samples/python/rest,29,11
+/morganstanley/api/tree/main/client-samples/python,28,16
+/morganstanley/api/tree/main/client-samples/java,24,15
+/morganstanley/api/tree/main/client-samples/java/websockets,20,9
+/morganstanley/api/tree/main/client-samples/java/rest/src/main/java/com/ms/infra/example/application,19,6
+/morganstanley/api/tree/main/client-samples/java/rest,14,10
+/morganstanley/api/blob/main/client-samples/java/rest/src/main/java/com/ms/infra/example/application/morganStanleyServices/MsClientAuthTokenService.java,14,6
+/morganstanley/api/tree/main/client-samples/python/websockets,12,9
