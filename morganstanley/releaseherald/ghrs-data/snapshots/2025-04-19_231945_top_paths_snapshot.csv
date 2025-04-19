@@ -1,0 +1,10 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald,3,2
+/morganstanley/releaseherald/blob/main/src/releaseherald/main.py,2,1
+/morganstanley/releaseherald/blob/main/pyproject.toml%20and%20https://github.com/morganstanley/releaseherald/tree/main/release_notes,1,1
+/morganstanley/releaseherald/blob/main/src/releaseherald/configuration.py,1,1
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/plugin_config.py,1,1
+/morganstanley/releaseherald/commits/main,1,1
+/morganstanley/releaseherald/tags,1,1
+/morganstanley/releaseherald/tree/main/release_notes,1,1
+/morganstanley/releaseherald/tree/main/src/releaseherald,1,1
