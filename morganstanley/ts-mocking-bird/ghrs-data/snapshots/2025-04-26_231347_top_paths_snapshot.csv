@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/ts-mocking-bird,8,5
+/morganstanley/ts-mocking-bird/security/secret-scanning/1,5,1
+/morganstanley/ts-mocking-bird/blob/31c5774857945e89ad2fd665594511aa109d50d3/package-lock.json,2,1
+/morganstanley/ts-mocking-bird/security,2,1
+/morganstanley/ts-mocking-bird/security/code-scanning,2,1
+/morganstanley/ts-mocking-bird/blob/5e1da0ef2ce1e8be0bb89ac3443ac3c36223ff7c/package.json,1,1
+/morganstanley/ts-mocking-bird/blob/fffee5876f27f6c3b983f5e45e6ffc35f50cd342/main/mock/verifiers.ts,1,1
+/morganstanley/ts-mocking-bird/blob/main/package-lock.json,1,1
+/morganstanley/ts-mocking-bird/security/dependabot,1,1
+/morganstanley/ts-mocking-bird/security/secret-scanning,1,1
