@@ -1,0 +1,356 @@
+name: DCO Check
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'PR number to check'
+        required: true
+        type: string
+
+jobs:
+  dco-check:
+    runs-on: ubuntu-latest
+    if: |
+      always() && 
+      (github.event_name == 'pull_request' || 
+       github.event_name == 'workflow_dispatch')
+    permissions:
+      contents: read
+      pull-requests: write
+      checks: write  # Required for updating check run status
+    steps:
+      # Set the PR number for different event types
+      - name: Set PR number
+        id: set-pr
+        run: |
+          if [ "${{ github.event_name }}" == "pull_request" ]; then
+            echo "pr_num=${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            echo "pr_num=${{ github.event.inputs.pr_number }}" >> $GITHUB_OUTPUT
+          else
+            echo "Error: Unknown event type"
+            exit 1
+          fi
+
+      - name: Checkout code
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
+        with:
+          fetch-depth: 0
+          # Use different refs based on the event type
+          ref: ${{ (github.event_name == 'workflow_dispatch' && format('refs/pull/{0}/head', github.event.inputs.pr_number)) || 
+                  '' }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
+        with:
+          node-version: 'lts/*'
+
+      - name: Check DCO compliance and comment on PR
+        id: dco-check
+        uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
+        env:
+          # Configurable list of GitHub usernames exempt from DCO requirements
+          ALLOWED_USERS: "dependabot[bot]"
+          PR_NUMBER: ${{ github.event.pull_request.number || steps.set-pr.outputs.pr_num || github.event.inputs.pr_number }}
+          REPO: ${{ github.repository }}
+          ALLOWED_EMAIL_DOMAINS: morganstanley.com,ms.com
+          ORGANIZATION: morganstanley
+          IGNORE_DCO_EXEMPTIONS: false
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const fs = require('fs');
+            const { execSync } = require('child_process');
+            
+            // Get PR number
+            const prNumber = process.env.PR_NUMBER;
+            if (!prNumber) {
+              throw new Error("Could not determine PR number");
+            }
+            
+            console.log(`Checking DCO compliance for PR #${prNumber}`);
+            
+            // Get PR commits directly from GitHub API
+            console.log("Fetching commits via GitHub API...");
+            const commitsApiUrl = `https://api.github.com/repos/${process.env.REPO}/pulls/${prNumber}/commits`;
+            
+            let commitData;
+            try {
+              const response = await github.request(`GET ${commitsApiUrl}`);
+              commitData = response.data;
+              
+              if (!commitData || !Array.isArray(commitData) || commitData.length === 0) {
+                throw new Error("No commit data returned from API");
+              }
+            } catch (error) {
+              console.error("Error fetching commits:", error.message);
+              core.setFailed("Could not retrieve commits from GitHub API. Please check repository permissions.");
+              return;
+            }
+            
+            // Parse allowed users and email domains
+            const allowedUsers = (process.env.ALLOWED_USERS || "").split(",").filter(Boolean);
+            const allowedEmailDomains = (process.env.ALLOWED_EMAIL_DOMAINS || "").split(",").filter(Boolean);
+            const organization = process.env.ORGANIZATION;
+            const ignoreDcoExemptions = process.env.IGNORE_DCO_EXEMPTIONS === 'true';
+            
+            // Cache for organization membership checks to avoid repeated API calls
+            const orgMembershipCache = new Map();
+            
+            // Function to check if a user is a member of the organization
+            async function isOrgMember(username) {
+              if (!username || !organization) return false;
+              
+              // Check cache first
+              if (orgMembershipCache.has(username)) {
+                return orgMembershipCache.get(username);
+              }
+              
+              try {
+                // Check if user is a member of the organization
+                const response = await github.request('GET /orgs/{org}/members/{username}', {
+                  org: organization,
+                  username: username
+                });
+                
+                // Status 204 means the user is a member
+                const isMember = response.status === 204;
+                orgMembershipCache.set(username, isMember);
+                return isMember;
+              } catch (error) {
+                // Status 404 means the user is not a member
+                if (error.status === 404) {
+                  orgMembershipCache.set(username, false);
+                  return false;
+                }
+                
+                // For other errors, log and assume not a member
+                console.error(`Error checking organization membership for ${username}:`, error.message);
+                orgMembershipCache.set(username, false);
+                return false;
+              }
+            }
+            
+            // Helper function to format date from commit
+            function formatCommitDate(commitDate) {
+              if (!commitDate) return new Date().toISOString().split('T')[0]; // Fallback to today
+              
+              try {
+                // Parse the date and format as YYYY-MM-DD
+                return new Date(commitDate).toISOString().split('T')[0];
+              } catch (error) {
+                console.error(`Error parsing date: ${commitDate}`, error.message);
+                return new Date().toISOString().split('T')[0]; // Fallback to today
+              }
+            }
+            
+            // Helper to check if a DCO file exists in the PR (head) or base branch
+            async function dcoFileExists({ owner, repo, path, headSha, baseSha }) {
+              // Try both with and without .md extension
+              const candidates = [path, path.endsWith('.md') ? path.slice(0, -3) : path + '.md'];
+              for (const candidate of candidates) {
+                // Try head (PR) first
+                try {
+                  await github.rest.repos.getContent({ owner, repo, path: candidate, ref: headSha });
+                  return true;
+                } catch (e) {}
+                // Try base branch
+                try {
+                  await github.rest.repos.getContent({ owner, repo, path: candidate, ref: baseSha });
+                  return true;
+                } catch (e) {}
+              }
+              return false;
+            }
+            
+            // Process each commit
+            let dcoFailure = false;
+            let failureDetails = "";
+            let detailedResults = "";
+            let commitCount = 0;
+            
+            // Get PR info for head/base SHA
+            const { data: prInfo } = await github.rest.pulls.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: prNumber
+            });
+            const headSha = prInfo.head.sha;
+            const baseSha = prInfo.base.sha;
+            
+            // Process commits sequentially to handle async org membership checks
+            for (let i = 0; i < commitData.length; i++) {
+              const commit = commitData[i];
+              const commitHash = commit.sha;
+              if (!commitHash || !/^[0-9a-f]{40}$/.test(commitHash)) {
+                console.log(`Skipping invalid commit entry: ${commitHash} - not a valid SHA`);
+                continue;
+              }
+              
+              commitCount++;
+              const commitDate = formatCommitDate(commit.commit.author.date);
+              const commitAuthor = commit.commit.author.name;
+              const commitEmail = commit.commit.author.email;
+              const commitMsg = commit.commit.message.split('\n')[0]; // First line of commit message
+              const githubUsername = commit.author ? commit.author.login : "";
+              const commitHashShort = commitHash.substring(0, 7);
+              
+              console.log(`Checking commit ${commitHashShort} by ${commitAuthor} <${commitEmail}>`);
+              
+              // Initialize commit status
+              let commitStatus = "❌"; // Default to failure
+              let commitReason = "Missing DCO reference";
+              
+              // Skip merge commits by checking number of parents
+              if (commit.parents && commit.parents.length > 1) {
+                console.log(`Skipping merge commit ${commitHashShort}`);
+                commitStatus = "⏩";
+                commitReason = "Merge commit (skipped)";
+                detailedResults += `| ${commitHashShort} | ${commitAuthor} | ${commitStatus} | ${commitReason} |\n`;
+                continue;
+              }
+              
+              // Check if user is in allowed users list
+              const isAllowedUser = allowedUsers.includes(githubUsername);
+              
+              // Check if email domain is in allowed domains list
+              const emailDomain = commitEmail.split('@')[1];
+              const isAllowedDomain = emailDomain && allowedEmailDomains.some(domain => emailDomain.toLowerCase() === domain.toLowerCase());
+              
+              // Check if user is a member of the organization
+              const orgMemberResult = githubUsername ? await isOrgMember(githubUsername) : false;
+              
+              // If not ignoring exemptions, allow exemptions as before
+              if (!ignoreDcoExemptions && (isAllowedUser || isAllowedDomain || orgMemberResult)) {
+                let reason;
+                if (orgMemberResult) {
+                  reason = "Organization member";
+                } else if (isAllowedUser) {
+                  reason = "Exempt user";
+                } else if (isAllowedDomain) {
+                  reason = "Exempt email domain";
+                }
+                console.log(`Exempting commit ${commitHashShort} - ${reason}`);
+                commitStatus = "✅"; // Success symbol
+                commitReason = reason;
+                detailedResults += `| ${commitHashShort} | ${commitAuthor} | ${commitStatus} | ${commitReason} |\n`;
+                continue;
+              }
+              
+              // Check for "Covered by" pattern (allow trailing punctuation via word boundary)
+              const dcoMatch = commitMsg.match(/[Cc]overed\s+by\s+([a-zA-Z0-9_\-\.\/]+)\b/);
+              if (dcoMatch) {
+                // DCO reference found, now check if file exists
+                const dcoPath = dcoMatch[1].replace(/\/+$/, ''); // Remove trailing slash
+                const dcoFullPath = dcoPath.startsWith('dco/') ? dcoPath : `dco/${dcoPath}`;
+                const fileExists = await dcoFileExists({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  path: dcoFullPath,
+                  headSha,
+                  baseSha
+                });
+                if (fileExists) {
+                  commitStatus = "✅";
+                  commitReason = "Valid DCO reference and file exists";
+                } else {
+                  dcoFailure = true;
+                  failureDetails += `- Commit ${commitHashShort} by ${commitAuthor} on ${commitDate} references DCO file '${dcoFullPath}' which does not exist in the PR or target branch\n`;
+                  commitStatus = "❌";
+                  commitReason = "DCO file not found";
+                }
+              } else {
+                dcoFailure = true;
+                failureDetails += `- Commit ${commitHashShort} by ${commitAuthor} on ${commitDate} is missing the 'Covered by <dco>' reference in the commit message\n`;
+                commitStatus = "❌";
+                commitReason = "Missing DCO reference";
+              }
+              
+              detailedResults += `| ${commitHashShort} | ${commitAuthor} | ${commitStatus} | ${commitReason} |\n`;
+            }
+            
+            console.log(`Processed ${commitCount} commits from the PR`);
+            
+            // Prepare PR comment
+            const statusHeader = dcoFailure 
+              ? '## ❌ DCO Check Failed'
+              : '## ✅ DCO Check Passed';
+            
+            let body = `${statusHeader}
+            
+            ### Detailed Commit Results
+            
+            | Commit | Author | Status | Reason |
+            |--------|--------|--------|--------|
+            ${detailedResults}
+            `;
+            
+            if (dcoFailure) {
+              body += `
+            ### Failure Details
+            
+            ${failureDetails}
+            
+            Some commits have missing or invalid DCO references. Please review the contribution guidelines to fix this issue:
+            
+            1. Make sure each commit message includes "Covered by <dco_filename>" where <dco_filename> is your DCO file
+            2. You may need to amend or rewrite your commits to include the proper DCO reference
+            
+            `;
+            } else {
+              body += `
+            All commits have valid DCO references or are exempt from DCO requirements.
+            
+            `;
+            }
+            
+            // Look for an existing DCO check comment
+            const issueNumber = context.issue.number || parseInt(prNumber);
+            const { data: comments } = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber
+            });
+            
+            const existingComment = comments.find(comment => 
+              comment.body.includes('DCO Check Failed') || 
+              comment.body.includes('DCO Check Passed')
+            );
+            
+            if (existingComment) {
+              // Update existing comment
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: existingComment.id,
+                body: body
+              });
+              console.log(`Updated existing DCO check comment ID ${existingComment.id}`);
+            } else {
+              // Create new comment
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: issueNumber,
+                body: body
+              });
+              console.log(`Created new DCO check comment`);
+            }
+            
+            // Set outputs for other steps
+            core.setOutput("dco_failed", dcoFailure.toString());
+            core.setOutput("exit_status", dcoFailure ? "1" : "0");
+            
+            // Return success/failure for the workflow
+            if (dcoFailure) {
+              core.setFailed("DCO check failed");
+            }
+
+      - name: Set final status
+        if: always()
+        run: exit ${{ steps.dco-check.outputs.exit_status || 0 }}
