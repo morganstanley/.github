@@ -62,7 +62,7 @@ jobs:
           ORGANIZATION: morganstanley
           IGNORE_DCO_EXEMPTIONS: false
         with:
-          github-token: ${{ secrets.DCO_CHECK_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const fs = require('fs');
             const { execSync } = require('child_process');
