@@ -54,7 +54,7 @@ jobs:
         id: app-token
         uses: actions/create-github-app-token@v2
         with:
-          app-id: ${{ vars.DCO_CHECK_APP_ID }}
+          app-id: ${{ secrets.DCO_CHECK_APP_ID }}
           private-key: ${{ secrets.DCO_CHECK_APP_PRIVATE_KEY }}
 
       - name: Check DCO compliance and comment on PR
