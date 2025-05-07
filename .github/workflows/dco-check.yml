@@ -60,7 +60,7 @@ jobs:
           REPO: ${{ github.repository }}
           ALLOWED_EMAIL_DOMAINS: morganstanley.com,ms.com
           ORGANIZATION: morganstanley
-          IGNORE_DCO_EXEMPTIONS: false
+          IGNORE_DCO_EXEMPTIONS: true
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
