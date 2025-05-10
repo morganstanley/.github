@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/base.py,11,7
+/morganstanley/releaseherald/blob/main/src/releaseherald/main.py,8,3
+/morganstanley/releaseherald,7,4
+/morganstanley/releaseherald/tree/main/src/releaseherald,6,3
+/morganstanley/releaseherald/blob/main/pyproject.toml,3,2
+/morganstanley/releaseherald/blob/main/src/releaseherald/configuration.py,3,2
+/morganstanley/releaseherald/blob/main/src/releaseherald/version.py,3,2
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/plugin_config.py,3,1
+/morganstanley/releaseherald/blob/main/dodo.py,2,2
+/morganstanley/releaseherald/blob/main/example_plugin/pyproject.toml,2,2
