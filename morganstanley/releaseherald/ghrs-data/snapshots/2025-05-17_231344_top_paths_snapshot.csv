@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/base.py,12,6
+/morganstanley/releaseherald/blob/main/src/releaseherald/main.py,8,2
+/morganstanley/releaseherald,7,5
+/morganstanley/releaseherald/pulls,6,2
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/plugin_config.py,4,1
+/morganstanley/releaseherald/blob/main/src/releaseherald/templates/news.rst,4,1
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/hookspecs.py,3,2
+/morganstanley/releaseherald/tree/main/src/releaseherald,3,2
+/morganstanley/releaseherald/blob/main/src/releaseherald/configuration.py,3,1
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/interface.py,3,1
