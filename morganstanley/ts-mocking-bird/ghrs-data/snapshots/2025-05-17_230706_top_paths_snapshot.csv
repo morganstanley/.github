@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/ts-mocking-bird,9,8
+/morganstanley/ts-mocking-bird/tree/main/.github,3,2
+/morganstanley/ts-mocking-bird/blob/main/.github/workflows/build.yml,3,1
+/morganstanley/ts-mocking-bird/pulls,2,2
+/morganstanley/ts-mocking-bird/blob/main/.github/workflows/create-release.yaml,2,1
+/morganstanley/ts-mocking-bird/actions,1,1
+/morganstanley/ts-mocking-bird/blob/d50ddbb16d0b31c46158f51b5b99a1f3a74123af/package.json,1,1
+/morganstanley/ts-mocking-bird/blob/main/.github/dependabot.yml,1,1
+/morganstanley/ts-mocking-bird/blob/main/.github/workflows/codeql.yml,1,1
+/morganstanley/ts-mocking-bird/blob/main/.github/workflows/scorecards.yml,1,1
