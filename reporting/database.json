@@ -413,12 +413,17 @@
             "score": 7.2,
             "date": "2025-03-14T16:10:35Z",
             "commit": "11696deccd0df86aa225bf605a45eff29d539fa5"
+          },
+          {
+            "score": 7.5,
+            "date": "2025-05-09T16:31:55Z",
+            "commit": "65c21e39715fbaae865414c4b6245056d4520556"
           }
         ],
         "current": {
-          "score": 7.5,
-          "date": "2025-05-09T16:31:55Z",
-          "commit": "65c21e39715fbaae865414c4b6245056d4520556"
+          "score": 7.3,
+          "date": "2025-05-14T14:25:55Z",
+          "commit": "108fabbdbacd47357611e17318fd1c8678fd2043"
         }
       },
       "ts-mocking-bird": {
@@ -616,12 +621,17 @@
             "score": 7,
             "date": "2025-04-25T07:11:04Z",
             "commit": "8a1cfd582b4efce01bacb2b90f77704d3b50e9e3"
+          },
+          {
+            "score": 6.9,
+            "date": "2025-05-07T13:31:31Z",
+            "commit": "8a1cfd582b4efce01bacb2b90f77704d3b50e9e3"
           }
         ],
         "current": {
-          "score": 6.9,
-          "date": "2025-05-07T13:31:31Z",
-          "commit": "8a1cfd582b4efce01bacb2b90f77704d3b50e9e3"
+          "score": 7.1,
+          "date": "2025-05-14T13:31:15Z",
+          "commit": "99c3e190e49034ec28b0035019750eecaacd4339"
         }
       },
       "testplan": {
@@ -670,11 +680,16 @@
             "score": 7,
             "date": "2025-04-28T07:14:07Z",
             "commit": "ea301279705e2b941b7515f4a0760ee6abb6f864"
+          },
+          {
+            "score": 6.8,
+            "date": "2025-05-07T13:32:08Z",
+            "commit": "ea301279705e2b941b7515f4a0760ee6abb6f864"
           }
         ],
         "current": {
-          "score": 6.8,
-          "date": "2025-05-07T13:32:08Z",
+          "score": 7,
+          "date": "2025-05-14T13:31:49Z",
           "commit": "ea301279705e2b941b7515f4a0760ee6abb6f864"
         }
       },
@@ -758,12 +773,17 @@
             "score": 4.2,
             "date": "2024-10-30T13:37:19Z",
             "commit": "d50e95fe068f22774648eb08e6619f4649d1fc39"
+          },
+          {
+            "score": 4.1,
+            "date": "2025-01-01T13:32:12Z",
+            "commit": "d50e95fe068f22774648eb08e6619f4649d1fc39"
           }
         ],
         "current": {
-          "score": 4.1,
-          "date": "2025-01-01T13:32:12Z",
-          "commit": "d50e95fe068f22774648eb08e6619f4649d1fc39"
+          "score": 4.5,
+          "date": "2025-05-15T17:07:05Z",
+          "commit": "8dfc05354511cadba63ce085c23868df6c0c7cf6"
         }
       },
       "Plug-in-AppDynamics-Data-Source": {
@@ -887,12 +907,17 @@
             "score": 7.9,
             "date": "2025-04-23T13:41:41Z",
             "commit": "e54d8700b6bf560ed2045e9afa3ef8e7ead6ed89"
+          },
+          {
+            "score": 8.1,
+            "date": "2025-05-02T15:57:08Z",
+            "commit": "83becb1a0793f1d3c379fef1c3cddb124423dbf6"
           }
         ],
         "current": {
-          "score": 8.1,
-          "date": "2025-05-02T15:57:08Z",
-          "commit": "83becb1a0793f1d3c379fef1c3cddb124423dbf6"
+          "score": 8.8,
+          "date": "2025-05-17T13:03:11Z",
+          "commit": "e520969482fbc1b1d396d8bd4e7806e8e6ab8d1d"
         }
       }
     },
