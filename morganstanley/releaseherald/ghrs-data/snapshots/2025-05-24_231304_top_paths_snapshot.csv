@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald,11,5
+/morganstanley/releaseherald/pull/33,8,2
+/morganstanley/releaseherald/pulls,7,2
+/morganstanley/releaseherald/pull/33/files,4,2
+/morganstanley/releaseherald/blob/main/src/releaseherald/main.py,3,2
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/base.py,3,2
+/morganstanley/releaseherald/blob/main/src/releaseherald/templates/news.rst,3,2
+/morganstanley/releaseherald/actions/metrics/usage,1,1
+/morganstanley/releaseherald/actions/runs/15065292855/job/42348648423,1,1
+/morganstanley/releaseherald/blob/e2af14ab03a5fe49bd6bbc26644608fe30f4c061/CONTRIBUTING.rst,1,1
