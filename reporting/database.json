@@ -700,12 +700,17 @@
             "score": 6.8,
             "date": "2025-05-07T13:32:08Z",
             "commit": "ea301279705e2b941b7515f4a0760ee6abb6f864"
+          },
+          {
+            "score": 7,
+            "date": "2025-05-14T13:31:49Z",
+            "commit": "ea301279705e2b941b7515f4a0760ee6abb6f864"
           }
         ],
         "current": {
-          "score": 7,
-          "date": "2025-05-14T13:31:49Z",
-          "commit": "ea301279705e2b941b7515f4a0760ee6abb6f864"
+          "score": 7.1,
+          "date": "2025-05-29T08:58:31Z",
+          "commit": "544c19ac5d5f4c2f9982bffe6a24d1699b94a63b"
         }
       },
       "needle": {
