@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald,13,9
+/morganstanley/releaseherald/pull/33,9,2
+/morganstanley/releaseherald/pull/33/files,6,2
+/morganstanley/releaseherald/pulls,6,2
+/morganstanley/releaseherald/actions/workflows/scorecards.yml,5,1
+/morganstanley/releaseherald/actions,4,1
+/morganstanley/releaseherald/blob/main/src/releaseherald/main.py,3,2
+/morganstanley/releaseherald/network/updates,3,1
+/morganstanley/releaseherald/actions/workflows/dependabot/dependabot-updates,2,1
+/morganstanley/releaseherald/network/updates/20190111/jobs,2,1
