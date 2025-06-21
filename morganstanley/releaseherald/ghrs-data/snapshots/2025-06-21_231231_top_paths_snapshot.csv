@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald,23,14
+/morganstanley/releaseherald/pulls,12,5
+/morganstanley/releaseherald/pull/33,11,2
+/morganstanley/releaseherald/pull/33/files,8,2
+/morganstanley/releaseherald/actions,6,1
+/morganstanley/releaseherald/pull/35,5,2
+/morganstanley/releaseherald/actions/workflows/scorecards.yml,5,1
+/morganstanley/releaseherald/pull/37,4,2
+/morganstanley/releaseherald/tree/main,4,1
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/manager.py,3,3
