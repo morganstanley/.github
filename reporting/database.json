@@ -681,12 +681,17 @@
             "score": 6.8,
             "date": "2025-06-04T13:31:59Z",
             "commit": "3dd26bf0d42e1a6e30fdec5b517e79e98cd05541"
+          },
+          {
+            "score": 6.7,
+            "date": "2025-06-11T13:31:43Z",
+            "commit": "3dd26bf0d42e1a6e30fdec5b517e79e98cd05541"
           }
         ],
         "current": {
-          "score": 6.7,
-          "date": "2025-06-11T13:31:43Z",
-          "commit": "3dd26bf0d42e1a6e30fdec5b517e79e98cd05541"
+          "score": 6.5,
+          "date": "2025-06-20T13:38:28Z",
+          "commit": "fa3c453aed9f0aa094d76138baf351d4bc6c55fc"
         }
       },
       "testplan": {
@@ -886,12 +891,17 @@
             "score": 4.4,
             "date": "2024-07-03T13:28:39Z",
             "commit": "122678e881de94721458fd948f38e65366b68689"
+          },
+          {
+            "score": 4.2,
+            "date": "2024-10-02T13:34:11Z",
+            "commit": "122678e881de94721458fd948f38e65366b68689"
           }
         ],
         "current": {
-          "score": 4.2,
-          "date": "2024-10-02T13:34:11Z",
-          "commit": "122678e881de94721458fd948f38e65366b68689"
+          "score": 4.9,
+          "date": "2025-06-18T13:31:07Z",
+          "commit": "268133a9ca54b4c4d2f871d154245b314917c33f"
         }
       },
       "releaseherald": {
@@ -900,12 +910,17 @@
             "score": 5.7,
             "date": "2024-07-03T13:29:02Z",
             "commit": "cef3f533b03f551ff0b68c7f9856f21008146d5d"
+          },
+          {
+            "score": 5.5,
+            "date": "2024-07-24T13:30:47Z",
+            "commit": "cef3f533b03f551ff0b68c7f9856f21008146d5d"
           }
         ],
         "current": {
-          "score": 5.5,
-          "date": "2024-07-24T13:30:47Z",
-          "commit": "cef3f533b03f551ff0b68c7f9856f21008146d5d"
+          "score": 6.7,
+          "date": "2025-06-18T14:33:52Z",
+          "commit": "75e3270e148dbd35040c34c157f997f5953d4eb2"
         }
       },
       "binlog": {
@@ -943,12 +958,17 @@
             "score": 3.8,
             "date": "2024-07-10T16:59:19Z",
             "commit": "dd07fac568c260bf17ad7ad0ac7bd9f1263e4ac1"
+          },
+          {
+            "score": 3.9,
+            "date": "2024-07-17T13:29:28Z",
+            "commit": "dd07fac568c260bf17ad7ad0ac7bd9f1263e4ac1"
           }
         ],
         "current": {
-          "score": 3.9,
-          "date": "2024-07-17T13:29:28Z",
-          "commit": "dd07fac568c260bf17ad7ad0ac7bd9f1263e4ac1"
+          "score": 4.4,
+          "date": "2025-06-18T13:33:32Z",
+          "commit": "a091298cb041a84196f9babc4377f31b37ea5581"
         }
       },
       "fdc3-web": {
