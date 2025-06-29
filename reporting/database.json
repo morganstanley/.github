@@ -877,12 +877,17 @@
             "score": 4.4,
             "date": "2024-08-28T13:31:24Z",
             "commit": "358bb9ebe57ece961be43b43130789f15a48d5fe"
+          },
+          {
+            "score": 4.3,
+            "date": "2024-09-11T13:32:57Z",
+            "commit": "358bb9ebe57ece961be43b43130789f15a48d5fe"
           }
         ],
         "current": {
-          "score": 4.3,
-          "date": "2024-09-11T13:32:57Z",
-          "commit": "358bb9ebe57ece961be43b43130789f15a48d5fe"
+          "score": 5.2,
+          "date": "2025-06-25T13:33:01Z",
+          "commit": "2148ade5c3d6070271c9eff6c40388bdb728c580"
         }
       },
       "modern-cpp-kafka": {
