@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/ts-mocking-bird,31,15
+/morganstanley/ts-mocking-bird/blob/main/spec/examples/exampleParameterMatcherTest.spec.ts,14,2
+/morganstanley/ts-mocking-bird/blob/main/spec/examples/exampleTests.spec.ts,11,3
+/morganstanley/ts-mocking-bird/blob/main/spec/examples/exampleImports.ts,7,2
+/morganstanley/ts-mocking-bird/pulls,7,2
+/morganstanley/ts-mocking-bird/tree/main/spec/helper,6,1
+/morganstanley/ts-mocking-bird/blob/main/spec/examples/exampleImplementation.ts,5,2
+/morganstanley/ts-mocking-bird/blob/main/spec/examples/exampleImportReplacementTest.spec.ts,5,2
+/morganstanley/ts-mocking-bird/pull/188,4,2
+/morganstanley/ts-mocking-bird/blob/main/spec/sut/sample-sut.ts,4,1
