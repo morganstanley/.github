@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/fdc3-web,17,12
+/morganstanley/fdc3-web/commits/22eea54ec138157522d6e8459f5560151df28cae,13,1
+/morganstanley/fdc3-web/tree/main/projects,2,2
+/morganstanley/fdc3-web/blob/main/projects/messaging-provider/src/iframe-messaging-provider.ts,2,1
+/morganstanley/fdc3-web/tree/main/projects/messaging-provider/src,2,1
+/morganstanley/fdc3-web/blob/22eea54ec138157522d6e8459f5560151df28cae/ARCHITECTURE.md,1,1
+/morganstanley/fdc3-web/blob/22eea54ec138157522d6e8459f5560151df28cae/package.json,1,1
+/morganstanley/fdc3-web/blob/22eea54ec138157522d6e8459f5560151df28cae/projects/lib/package.json,1,1
+/morganstanley/fdc3-web/blob/22eea54ec138157522d6e8459f5560151df28cae/projects/messaging-provider/package.json,1,1
+/morganstanley/fdc3-web/blob/22eea54ec138157522d6e8459f5560151df28cae/projects/ui-provider/package.json,1,1
