@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/fdc3-web,11,7
+/morganstanley/fdc3-web/blob/main/package.json,2,1
+/morganstanley/fdc3-web/blob/22eea54ec138157522d6e8459f5560151df28cae/package.json,1,1
+/morganstanley/fdc3-web/blob/22eea54ec138157522d6e8459f5560151df28cae/projects/lib/package.json,1,1
+/morganstanley/fdc3-web/blob/22eea54ec138157522d6e8459f5560151df28cae/projects/messaging-provider/package.json,1,1
+/morganstanley/fdc3-web/blob/22eea54ec138157522d6e8459f5560151df28cae/projects/ui-provider/package.json,1,1
+/morganstanley/fdc3-web/blob/main/projects/test-harness/vite.config.ts,1,1
+/morganstanley/fdc3-web/blob/main/tsconfig.json,1,1
+/morganstanley/fdc3-web/compare/v0.3.2...main,1,1
+/morganstanley/fdc3-web/releases/tag/v0.3.2,1,1
