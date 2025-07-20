@@ -701,12 +701,17 @@
             "score": 6.7,
             "date": "2025-06-11T13:31:43Z",
             "commit": "3dd26bf0d42e1a6e30fdec5b517e79e98cd05541"
+          },
+          {
+            "score": 6.5,
+            "date": "2025-06-20T13:38:28Z",
+            "commit": "fa3c453aed9f0aa094d76138baf351d4bc6c55fc"
           }
         ],
         "current": {
-          "score": 6.5,
-          "date": "2025-06-20T13:38:28Z",
-          "commit": "fa3c453aed9f0aa094d76138baf351d4bc6c55fc"
+          "score": 7,
+          "date": "2025-07-17T13:57:03Z",
+          "commit": "4e59e8d65137c4105d5b3ad746d35e745472e282"
         }
       },
       "testplan": {
