@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,114,92
+/morganstanley/binlog/tree/main/example,19,9
+/morganstanley/binlog/blob/main/INSTALL.md,15,7
+/morganstanley/binlog/tree/main/include,15,7
+/morganstanley/binlog/tree/main,14,4
+/morganstanley/binlog/tree/main/include/binlog,12,6
+/morganstanley/binlog/blob/main/CMakeLists.txt,8,4
+/morganstanley/binlog/blob/main/example/HelloWorld.cpp,7,5
+/morganstanley/binlog/issues,6,4
+/morganstanley/binlog/blob/main/README.md,6,3
