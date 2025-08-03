@@ -17,7 +17,8 @@
         "releaseherald",
         "binlog",
         "gradle-plugin-application",
-        "fdc3-web"
+        "fdc3-web",
+        "url-detector"
       ],
       "excluded": []
     },
