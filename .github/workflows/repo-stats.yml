@@ -19,7 +19,7 @@ jobs:
     strategy:
       max-parallel: 1
       matrix:
-        statsRepo: ['morganstanley/MSML','morganstanley/ComposeUI','morganstanley/hobbes','morganstanley/binlog','morganstanley/modern-cpp-kafka','morganstanley/testplan','morganstanley/Xpedite','morganstanley/optimus-cirrus','morganstanley/ts-mocking-bird','morganstanley/message-broker','morganstanley/eslint-plugin-externalincludes','morganstanley/Crossroads','morganstanley/needle','morganstanley/dotnet-please','morganstanley/desktopJS','morganstanley/cpx-training','morganstanley/api','morganstanley/releaseherald','morganstanley/fdc3-web']
+        statsRepo: ['morganstanley/MSML','morganstanley/ComposeUI','morganstanley/hobbes','morganstanley/binlog','morganstanley/modern-cpp-kafka','morganstanley/testplan','morganstanley/Xpedite','morganstanley/optimus-cirrus','morganstanley/ts-mocking-bird','morganstanley/message-broker','morganstanley/eslint-plugin-externalincludes','morganstanley/Crossroads','morganstanley/needle','morganstanley/dotnet-please','morganstanley/desktopJS','morganstanley/cpx-training','morganstanley/api','morganstanley/releaseherald','morganstanley/fdc3-web','morganstanley/url-detector']
     steps:
       - name: github-repo-stats
         id: github-repo-stats
