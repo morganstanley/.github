@@ -805,12 +805,17 @@
             "score": 7.2,
             "date": "2025-06-06T08:26:39Z",
             "commit": "2858627354a4e1a82b4a2e5ed90426b4c589a46e"
+          },
+          {
+            "score": 7,
+            "date": "2025-07-30T13:34:04Z",
+            "commit": "f24c96f579f514e37078bb8b8c5ff76c84d570b3"
           }
         ],
         "current": {
-          "score": 7,
-          "date": "2025-07-30T13:34:04Z",
-          "commit": "f24c96f579f514e37078bb8b8c5ff76c84d570b3"
+          "score": 7.2,
+          "date": "2025-08-07T05:43:39Z",
+          "commit": "3cc7053f5db954661cca3c4bbc954d11402c1db7"
         }
       },
       "needle": {
@@ -1111,11 +1116,17 @@
         }
       },
       "url-detector": {
-        "previous": [],
+        "previous": [
+          {
+            "score": 7.7,
+            "date": "2025-08-01T17:07:43Z",
+            "commit": "cc8afa19965f4e7254e031702624b3fd2711b3bb"
+          }
+        ],
         "current": {
-          "score": 7.7,
-          "date": "2025-08-01T17:07:43Z",
-          "commit": "cc8afa19965f4e7254e031702624b3fd2711b3bb"
+          "score": 8.1,
+          "date": "2025-08-08T20:18:22Z",
+          "commit": "b24d6c63748633efbc5141f28dc8eac1d898f44f"
         }
       }
     },
