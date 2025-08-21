@@ -18,10 +18,14 @@ jobs:
     if: |
       always() && 
       (github.event_name == 'pull_request' || 
-       github.event_name == 'workflow_dispatch')
+       github.event_name == 'workflow_dispatch' ||
+       (github.event_name == 'issue_comment' && 
+        github.event.issue.pull_request && 
+        contains(github.event.comment.body, '/allowdco')))
     permissions:
       contents: read
       pull-requests: read
+      issues: read  # Required for reading PR comments
       checks: write  # Required for updating check run status
     steps:
       # Set the PR number for different event types
@@ -32,6 +36,8 @@ jobs:
             echo "pr_num=${{ github.event.pull_request.number }}" >> $GITHUB_OUTPUT
           elif [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
             echo "pr_num=${{ github.event.inputs.pr_number }}" >> $GITHUB_OUTPUT
+          elif [ "${{ github.event_name }}" == "issue_comment" ]; then
+            echo "pr_num=${{ github.event.issue.number }}" >> $GITHUB_OUTPUT
           else
             echo "Error: Unknown event type"
             exit 1
@@ -43,6 +49,7 @@ jobs:
           fetch-depth: 0
           # Use different refs based on the event type
           ref: ${{ (github.event_name == 'workflow_dispatch' && format('refs/pull/{0}/head', github.event.inputs.pr_number)) || 
+                   (github.event_name == 'issue_comment' && format('refs/pull/{0}/head', github.event.issue.number)) ||
                   '' }}
 
       - name: Set up Node.js
@@ -101,6 +108,46 @@ jobs:
             
             // Cache for organization membership checks to avoid repeated API calls
             const orgMembershipCache = new Map();
+            
+            // Function to check for /allowdco comment by org owner
+            async function checkForAllowDcoComment(prNumber) {
+              try {
+                console.log(`Checking for /allowdco comment in PR #${prNumber}...`);
+                
+                // Get all comments on the PR
+                const { data: comments } = await github.rest.issues.listComments({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: prNumber
+                });
+                
+                // Look for /allowdco comment (case insensitive)
+                const allowDcoComment = comments.find(comment => 
+                  /\/allowdco\b/i.test(comment.body.trim())
+                );
+                
+                if (!allowDcoComment) {
+                  return false;
+                }
+                
+                console.log(`Found /allowdco comment by ${allowDcoComment.user.login}`);
+                
+                // Check if the commenter is an org member using existing function
+                const isMember = await isOrgMember(allowDcoComment.user.login);
+                
+                if (isMember) {
+                  console.log(`✅ /allowdco comment approved by org member: ${allowDcoComment.user.login}`);
+                  return true;
+                } else {
+                  console.log(`❌ /allowdco comment by ${allowDcoComment.user.login} ignored (not org member)`);
+                  return false;
+                }
+                
+              } catch (error) {
+                console.error("Error checking for /allowdco comment:", error.message);
+                return false;
+              }
+            }
             
             // Function to check if a user is a member of the organization
             async function isOrgMember(username) {
@@ -182,6 +229,25 @@ jobs:
             });
             const headSha = prInfo.head.sha;
             const baseSha = prInfo.base.sha;
+            
+            // Check for /allowdco comment by org owner
+            const hasAllowDcoComment = await checkForAllowDcoComment(prNumber);
+            if (hasAllowDcoComment) {
+              console.log("✅ DCO check bypassed by org owner /allowdco comment");
+              
+              // Create success summary
+              const successBody = `## ✅ DCO Check Passed (Bypassed by Org Member)\n\nAll commits in this PR have been exempted from DCO requirements by an organization member using the \`/allowdco\` comment.\n\n### Bypass Reason\nOrganization member manually approved DCO bypass via comment.\n`;
+              
+              console.log(successBody);
+              await core.summary.addRaw(successBody).write();
+              
+              // Set success outputs
+              core.setOutput("dco_failed", "false");
+              core.setOutput("exit_status", "0");
+              
+              console.log("DCO check completed successfully (bypassed)");
+              return; // Exit early with success
+            }
             
             // Process commits sequentially to handle async org membership checks
             for (let i = 0; i < commitData.length; i++) {
