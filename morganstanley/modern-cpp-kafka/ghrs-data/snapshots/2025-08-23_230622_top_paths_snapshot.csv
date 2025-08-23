@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/modern-cpp-kafka,88,51
+/morganstanley/modern-cpp-kafka/tree/main/examples,13,4
+/morganstanley/modern-cpp-kafka/blob/main/doc/KafkaBrokerConfiguration.md,9,5
+/morganstanley/modern-cpp-kafka/pulls,8,3
+/morganstanley/modern-cpp-kafka/tree/main/include,7,5
+/morganstanley/modern-cpp-kafka/tree/main/include/kafka,6,6
+/morganstanley/modern-cpp-kafka/blob/main/examples/example_KafkaProducer_Simple.cc,5,2
+/morganstanley/modern-cpp-kafka/blob/268133a9ca54b4c4d2f871d154245b314917c33f/include/kafka/RdKafkaHelper.h,5,1
+/morganstanley/modern-cpp-kafka/blob/main/examples/example_KafkaClient_Callbacks.cc,4,2
+/morganstanley/modern-cpp-kafka/issues,4,2
