@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,18,15
+/morganstanley/binlog/blob/main/example/ConsumeLoop.cpp,2,2
+/morganstanley/binlog/blob/main/example/HelloWorld.cpp,2,2
+/morganstanley/binlog/blob/main/doc/Internals.md,2,1
+/morganstanley/binlog/blob/main/doc/Mserialize.md,2,1
+/morganstanley/binlog/blob/main/example/LogRotation.cpp,2,1
+/morganstanley/binlog/blob/main/bin/binaryio.cpp,1,1
+/morganstanley/binlog/blob/main/doc/UserGuide.md,1,1
+/morganstanley/binlog/blob/main/example/MultiOutput.cpp,1,1
+/morganstanley/binlog/blob/main/example/TextOutput.cpp,1,1
