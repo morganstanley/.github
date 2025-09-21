@@ -72,12 +72,17 @@
             "score": 8.5,
             "date": "2025-08-13T13:30:40Z",
             "commit": "07414a2fdcc5790f2b2e44ec2f6367e4171ed96f"
+          },
+          {
+            "score": 9.4,
+            "date": "2025-08-27T13:29:00Z",
+            "commit": "07414a2fdcc5790f2b2e44ec2f6367e4171ed96f"
           }
         ],
         "current": {
-          "score": 9.4,
-          "date": "2025-08-27T13:29:00Z",
-          "commit": "07414a2fdcc5790f2b2e44ec2f6367e4171ed96f"
+          "score": 9.5,
+          "date": "2025-09-18T15:18:56Z",
+          "commit": "2f25733862420567ea5cf1ce002abf25551c0599"
         }
       },
       "desktopJS": {
@@ -642,12 +647,17 @@
             "score": 7.9,
             "date": "2025-09-03T13:31:08Z",
             "commit": "400ddbf0a2985326cc7afc2ef5c57f4e269e6e5a"
+          },
+          {
+            "score": 7.8,
+            "date": "2025-09-10T13:30:42Z",
+            "commit": "400ddbf0a2985326cc7afc2ef5c57f4e269e6e5a"
           }
         ],
         "current": {
-          "score": 7.8,
-          "date": "2025-09-10T13:30:42Z",
-          "commit": "400ddbf0a2985326cc7afc2ef5c57f4e269e6e5a"
+          "score": 7.9,
+          "date": "2025-09-15T16:29:40Z",
+          "commit": "a504e1c830febe5622f250baffdce757c6c5e7bb"
         }
       },
       "message-broker": {
@@ -806,12 +816,17 @@
             "score": 6.9,
             "date": "2025-08-22T13:48:14Z",
             "commit": "3240524f388705425337c1db67583615dc71a2ac"
+          },
+          {
+            "score": 7.2,
+            "date": "2025-09-10T13:30:29Z",
+            "commit": "629b6d296cbaca9c0067a1320b6c52a5901948bd"
           }
         ],
         "current": {
-          "score": 7.2,
-          "date": "2025-09-10T13:30:29Z",
-          "commit": "629b6d296cbaca9c0067a1320b6c52a5901948bd"
+          "score": 7,
+          "date": "2025-09-19T14:03:10Z",
+          "commit": "33e9117e6a651eb2a8c0483ce8270b8ce6e5ba39"
         }
       },
       "testplan": {
@@ -974,12 +989,17 @@
             "score": 7.8,
             "date": "2025-08-20T13:29:36Z",
             "commit": "1575bce557ebad64c2ce862c4a330ef3633ce20a"
+          },
+          {
+            "score": 8.3,
+            "date": "2025-08-27T13:28:57Z",
+            "commit": "1575bce557ebad64c2ce862c4a330ef3633ce20a"
           }
         ],
         "current": {
-          "score": 8.3,
-          "date": "2025-08-27T13:28:57Z",
-          "commit": "1575bce557ebad64c2ce862c4a330ef3633ce20a"
+          "score": 8.2,
+          "date": "2025-09-20T13:54:09Z",
+          "commit": "402c9a072aa31805729661ecf08643c8cefe12ca"
         }
       },
       "Xpedite": {
