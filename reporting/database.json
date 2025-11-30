@@ -961,12 +961,17 @@
             "score": 7,
             "date": "2025-11-14T16:27:53Z",
             "commit": "fe83f663d6b0f9c26e9eb3f998fe2c08268639b2"
+          },
+          {
+            "score": 6.9,
+            "date": "2025-11-19T13:31:19Z",
+            "commit": "123ec63e4c6683869338959437ecbbcfedc044fc"
           }
         ],
         "current": {
-          "score": 6.9,
-          "date": "2025-11-19T13:31:19Z",
-          "commit": "123ec63e4c6683869338959437ecbbcfedc044fc"
+          "score": 7.1,
+          "date": "2025-11-26T13:32:03Z",
+          "commit": "305c314158f8de0080b3191b0512bd8c65c08275"
         }
       },
       "testplan": {
