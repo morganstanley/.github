@@ -241,12 +241,17 @@
             "score": 8.9,
             "date": "2025-11-19T13:31:46Z",
             "commit": "733dd13a9b54f3dcb9a0b5f1f61ddd5d0e7b13f6"
+          },
+          {
+            "score": 8.8,
+            "date": "2025-12-03T13:32:41Z",
+            "commit": "63398ee3b1ebae6a81ee81edf0d17f6b58c85b01"
           }
         ],
         "current": {
-          "score": 8.8,
-          "date": "2025-12-03T13:32:41Z",
-          "commit": "63398ee3b1ebae6a81ee81edf0d17f6b58c85b01"
+          "score": 8.9,
+          "date": "2025-12-24T18:25:49Z",
+          "commit": "1410bc7278935a7ee7736c57ab4b955a22df14b0"
         }
       },
       "dotnet-please": {
@@ -613,12 +618,17 @@
             "score": 7.3,
             "date": "2025-05-14T14:25:55Z",
             "commit": "108fabbdbacd47357611e17318fd1c8678fd2043"
+          },
+          {
+            "score": 7.2,
+            "date": "2025-05-20T17:30:20Z",
+            "commit": "108fabbdbacd47357611e17318fd1c8678fd2043"
           }
         ],
         "current": {
-          "score": 7.2,
-          "date": "2025-05-20T17:30:20Z",
-          "commit": "108fabbdbacd47357611e17318fd1c8678fd2043"
+          "score": 7.3,
+          "date": "2025-12-24T18:23:27Z",
+          "commit": "ff32874dc99171548950045c7b2b8abaeb386e3c"
         }
       },
       "ts-mocking-bird": {
