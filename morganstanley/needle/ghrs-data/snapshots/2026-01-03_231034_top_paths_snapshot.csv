@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/needle,15,12
+/morganstanley/needle/releases,2,2
+/morganstanley/needle/pull/210,2,1
+/morganstanley/needle/blob/2a23f13fb7dbbf0f34245e4e47ad230bf97d8ee2/package.json,1,1
+/morganstanley/needle/blob/745d3bea5b384b1a431c837b47ab9bf84d6a289c/.github/CODEOWNERS,1,1
+/morganstanley/needle/blob/main/.travis.yml,1,1
+/morganstanley/needle/blob/main/package.json,1,1
+/morganstanley/needle/compare/main...dependabot/npm_and_yarn/eslint/js-9.32.0,1,1
+/morganstanley/needle/compare/main...mimiflynn-patch-1,1,1
+/morganstanley/needle/edit/main/readme.md,1,1
