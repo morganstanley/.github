@@ -112,12 +112,17 @@
             "score": 9.5,
             "date": "2025-11-05T13:29:56Z",
             "commit": "4badc3503f8a5e7ba80bddb5fac6a7446f9e0687"
+          },
+          {
+            "score": 9.4,
+            "date": "2025-11-12T13:30:25Z",
+            "commit": "4badc3503f8a5e7ba80bddb5fac6a7446f9e0687"
           }
         ],
         "current": {
-          "score": 9.4,
-          "date": "2025-11-12T13:30:25Z",
-          "commit": "4badc3503f8a5e7ba80bddb5fac6a7446f9e0687"
+          "score": 9.1,
+          "date": "2026-01-01T19:42:26Z",
+          "commit": "b8b93b14a7b67374b9d7990455cdc2d96c63dc8f"
         }
       },
       "desktopJS": {
@@ -623,12 +628,17 @@
             "score": 7.2,
             "date": "2025-05-20T17:30:20Z",
             "commit": "108fabbdbacd47357611e17318fd1c8678fd2043"
+          },
+          {
+            "score": 7.3,
+            "date": "2025-12-24T18:23:27Z",
+            "commit": "ff32874dc99171548950045c7b2b8abaeb386e3c"
           }
         ],
         "current": {
-          "score": 7.3,
-          "date": "2025-12-24T18:23:27Z",
-          "commit": "ff32874dc99171548950045c7b2b8abaeb386e3c"
+          "score": 7.2,
+          "date": "2026-01-01T12:44:57Z",
+          "commit": "fcc7157ce4708c49255791ecf1068135f166ae5e"
         }
       },
       "ts-mocking-bird": {
@@ -792,12 +802,17 @@
             "score": 8,
             "date": "2025-11-19T13:31:32Z",
             "commit": "d3c56bfc49d60cb4f41640ca969270b5cf9bbe9e"
+          },
+          {
+            "score": 8.2,
+            "date": "2025-12-03T13:32:26Z",
+            "commit": "280b4eaeca13b7284f7976babf33405d9eb08dd8"
           }
         ],
         "current": {
-          "score": 8.2,
-          "date": "2025-12-03T13:32:26Z",
-          "commit": "280b4eaeca13b7284f7976babf33405d9eb08dd8"
+          "score": 8.1,
+          "date": "2026-01-01T23:07:40Z",
+          "commit": "6c9ebe466a45a17f30e9e1d51208aac415562626"
         }
       },
       "message-broker": {
@@ -986,12 +1001,17 @@
             "score": 6.9,
             "date": "2025-11-19T13:31:19Z",
             "commit": "123ec63e4c6683869338959437ecbbcfedc044fc"
+          },
+          {
+            "score": 7.1,
+            "date": "2025-11-26T13:32:03Z",
+            "commit": "305c314158f8de0080b3191b0512bd8c65c08275"
           }
         ],
         "current": {
-          "score": 7.1,
-          "date": "2025-11-26T13:32:03Z",
-          "commit": "305c314158f8de0080b3191b0512bd8c65c08275"
+          "score": 7,
+          "date": "2026-01-02T14:42:05Z",
+          "commit": "eed284be75e5f218637ae560d1287379e998264f"
         }
       },
       "testplan": {
@@ -1278,12 +1298,17 @@
             "score": 4.4,
             "date": "2025-10-15T13:32:42Z",
             "commit": "8dfc05354511cadba63ce085c23868df6c0c7cf6"
+          },
+          {
+            "score": 4.1,
+            "date": "2025-10-22T13:33:04Z",
+            "commit": "8dfc05354511cadba63ce085c23868df6c0c7cf6"
           }
         ],
         "current": {
-          "score": 4.1,
-          "date": "2025-10-22T13:33:04Z",
-          "commit": "8dfc05354511cadba63ce085c23868df6c0c7cf6"
+          "score": 4.2,
+          "date": "2026-01-02T14:42:36Z",
+          "commit": "dd27ab7c694a871890464b684bcfceddcf6ebbde"
         }
       },
       "Plug-in-AppDynamics-Data-Source": {
@@ -1401,12 +1426,17 @@
             "score": 5,
             "date": "2025-10-29T13:31:09Z",
             "commit": "268133a9ca54b4c4d2f871d154245b314917c33f"
+          },
+          {
+            "score": 4.6,
+            "date": "2025-11-05T13:31:00Z",
+            "commit": "268133a9ca54b4c4d2f871d154245b314917c33f"
           }
         ],
         "current": {
-          "score": 4.6,
-          "date": "2025-11-05T13:31:00Z",
-          "commit": "268133a9ca54b4c4d2f871d154245b314917c33f"
+          "score": 4.7,
+          "date": "2026-01-01T19:44:14Z",
+          "commit": "ab9966c0a527b40d2faa3b335b50f53cf6974e94"
         }
       },
       "releaseherald": {
