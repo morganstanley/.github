@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,130,90
+/morganstanley/binlog/tree/main/include,9,4
+/morganstanley/binlog/tree/main/include/binlog,7,5
+/morganstanley/binlog/issues,6,6
+/morganstanley/binlog/tree/main/bin,6,4
+/morganstanley/binlog/commits/main,5,5
+/morganstanley/binlog/tree/main,5,2
+/morganstanley/binlog/tree/main/cmake,4,4
+/morganstanley/binlog/tree/main/include/mserialize,4,3
+/morganstanley/binlog/tree/main/tools,4,3
