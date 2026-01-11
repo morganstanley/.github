@@ -117,11 +117,16 @@
             "score": 9.4,
             "date": "2025-11-12T13:30:25Z",
             "commit": "4badc3503f8a5e7ba80bddb5fac6a7446f9e0687"
+          },
+          {
+            "score": 9.1,
+            "date": "2026-01-01T19:42:26Z",
+            "commit": "b8b93b14a7b67374b9d7990455cdc2d96c63dc8f"
           }
         ],
         "current": {
-          "score": 9.1,
-          "date": "2026-01-01T19:42:26Z",
+          "score": 9.5,
+          "date": "2026-01-07T13:31:40Z",
           "commit": "b8b93b14a7b67374b9d7990455cdc2d96c63dc8f"
         }
       },
