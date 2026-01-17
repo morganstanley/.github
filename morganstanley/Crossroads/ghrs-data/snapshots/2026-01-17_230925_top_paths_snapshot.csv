@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/Crossroads,5,5
+/morganstanley/Crossroads/tree/main/src,2,2
+/morganstanley/Crossroads/actions,1,1
+/morganstanley/Crossroads/actions/runs/12107350328/workflow,1,1
+/morganstanley/Crossroads/actions/runs/12572193090/workflow,1,1
+/morganstanley/Crossroads/actions/runs/17410754780,1,1
+/morganstanley/Crossroads/actions/runs/18155753241,1,1
+/morganstanley/Crossroads/blob/51cde709766bc8f4b7e6ebbd2f24f27155dc945f/CODEOWNERS,1,1
+/morganstanley/Crossroads/blob/e4e007a95dcf4fef3f696b933bee587e9c4f5c54/.github/workflows/scorecard.yml,1,1
+/morganstanley/Crossroads/blob/main/src/Crossroads.Launcher/Program.cs,1,1
