@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,133,100
+/morganstanley/binlog/issues,9,9
+/morganstanley/binlog/tree/main/bin,8,5
+/morganstanley/binlog/tree/main/include,6,5
+/morganstanley/binlog/tree/main/include/binlog,5,5
+/morganstanley/binlog/pulls,5,4
+/morganstanley/binlog/tree/main/example,5,3
+/morganstanley/binlog/blob/main/bin/bread.cpp,4,4
+/morganstanley/binlog/tree/main,4,3
+/morganstanley/binlog/tree/main/doc,4,3
