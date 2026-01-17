@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/message-broker,13,12
+/morganstanley/message-broker/commit/eed284be75e5f218637ae560d1287379e998264f,4,4
+/morganstanley/message-broker/pulls,4,1
+/morganstanley/message-broker/pull/345,2,1
+/morganstanley/message-broker/pull/346,2,1
+/morganstanley/message-broker/actions/runs/14833780305/job/41640552712,1,1
+/morganstanley/message-broker/actions/runs/20022593002,1,1
+/morganstanley/message-broker/actions/runs/20022593002/job/57412637291,1,1
+/morganstanley/message-broker/actions/runs/20022593002/job/57412637301,1,1
+/morganstanley/message-broker/actions/runs/20022593002/job/57412637311,1,1
