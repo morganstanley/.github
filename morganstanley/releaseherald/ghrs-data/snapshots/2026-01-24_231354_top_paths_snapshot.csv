@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald,3,3
+/morganstanley/releaseherald/pulls,2,2
+/morganstanley/releaseherald/blob/main/pyproject.toml,2,1
+/morganstanley/releaseherald/pull/60,2,1
+/morganstanley/releaseherald/pull/62,2,1
+/morganstanley/releaseherald/tags,2,1
+/morganstanley/releaseherald/pull/60/changes,1,1
+/morganstanley/releaseherald/pull/62/changes,1,1
+/morganstanley/releaseherald/releases,1,1
+/morganstanley/releaseherald/releases/tag/0.1.0,1,1
