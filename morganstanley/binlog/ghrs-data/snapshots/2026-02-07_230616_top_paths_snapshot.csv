@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,143,105
+/morganstanley/binlog/issues,11,7
+/morganstanley/binlog/commits/main,8,4
+/morganstanley/binlog/releases,5,5
+/morganstanley/binlog/tree/main/include,4,4
+/morganstanley/binlog/blob/main/bin/binaryio.cpp,4,3
+/morganstanley/binlog/commit/dc4e1dd7074cdaccaf8aaf4d082104f07b5f2ee5,4,2
+/morganstanley/binlog/pulls,4,2
+/morganstanley/binlog/tree/main,4,2
+/morganstanley/binlog/blob/main/bin/bread.cpp,3,3
