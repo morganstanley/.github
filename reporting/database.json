@@ -261,12 +261,17 @@
             "score": 8.8,
             "date": "2025-12-03T13:32:41Z",
             "commit": "63398ee3b1ebae6a81ee81edf0d17f6b58c85b01"
+          },
+          {
+            "score": 8.9,
+            "date": "2025-12-24T18:25:49Z",
+            "commit": "1410bc7278935a7ee7736c57ab4b955a22df14b0"
           }
         ],
         "current": {
-          "score": 8.9,
-          "date": "2025-12-24T18:25:49Z",
-          "commit": "1410bc7278935a7ee7736c57ab4b955a22df14b0"
+          "score": 8.8,
+          "date": "2026-02-04T21:10:30Z",
+          "commit": "b905fd20e6980fab8ed548351374e74e525fcfb3"
         }
       },
       "dotnet-please": {
@@ -494,12 +499,17 @@
             "score": 7.2,
             "date": "2025-10-22T13:33:02Z",
             "commit": "646e3bfcf326d46024dbeb0e15774b9ec84f3a1b"
+          },
+          {
+            "score": 7.4,
+            "date": "2025-11-21T17:54:27Z",
+            "commit": "feffec35864d699f7cc047258e31bfcb0da4ba6d"
           }
         ],
         "current": {
-          "score": 7.4,
-          "date": "2025-11-21T17:54:27Z",
-          "commit": "feffec35864d699f7cc047258e31bfcb0da4ba6d"
+          "score": 7,
+          "date": "2026-02-04T13:45:10Z",
+          "commit": "998183648a74fa0d513f2f2cb3dfa96e2ac2c11b"
         }
       },
       "ComposeUI": {
@@ -1026,12 +1036,17 @@
             "score": 7,
             "date": "2026-01-02T14:42:05Z",
             "commit": "eed284be75e5f218637ae560d1287379e998264f"
+          },
+          {
+            "score": 6.9,
+            "date": "2026-01-28T13:36:47Z",
+            "commit": "0b4655535aa2125546c8eb7a426a7cb3e94e2873"
           }
         ],
         "current": {
-          "score": 6.9,
-          "date": "2026-01-28T13:36:47Z",
-          "commit": "0b4655535aa2125546c8eb7a426a7cb3e94e2873"
+          "score": 6.8,
+          "date": "2026-02-04T13:44:08Z",
+          "commit": "64d5b43163fd19c3961a35d1322d1ef684d2c384"
         }
       },
       "testplan": {
@@ -1584,12 +1599,17 @@
             "score": 6,
             "date": "2025-10-22T13:33:24Z",
             "commit": "0d0ba81929dbcae5781344c09b32fe6a390cc085"
+          },
+          {
+            "score": 6.4,
+            "date": "2025-11-12T13:33:18Z",
+            "commit": "9da031e23fd800580dec14005222bc1e1904ae3e"
           }
         ],
         "current": {
-          "score": 6.4,
-          "date": "2025-11-12T13:33:18Z",
-          "commit": "9da031e23fd800580dec14005222bc1e1904ae3e"
+          "score": 6.5,
+          "date": "2026-02-04T13:45:24Z",
+          "commit": "dc4e1dd7074cdaccaf8aaf4d082104f07b5f2ee5"
         }
       },
       "gradle-plugin-application": {
