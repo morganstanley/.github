@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,122,90
+/morganstanley/binlog/commits/main,10,4
+/morganstanley/binlog/tree/main/include,7,6
+/morganstanley/binlog/tree/main/include/binlog,7,6
+/morganstanley/binlog/releases,4,4
+/morganstanley/binlog/blob/main/example/ConsumeLoop.cpp,4,3
+/morganstanley/binlog/tree/main/bin,4,3
+/morganstanley/binlog/tree/main/example,4,3
+/morganstanley/binlog/commit/dc4e1dd7074cdaccaf8aaf4d082104f07b5f2ee5,4,2
+/morganstanley/binlog/tree/main,4,2
