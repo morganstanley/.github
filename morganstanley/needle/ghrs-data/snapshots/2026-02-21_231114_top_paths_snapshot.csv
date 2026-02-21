@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/needle,30,19
+/morganstanley/needle/pulls,16,16
+/morganstanley/needle/activity,3,2
+/morganstanley/needle/issues,2,2
+/morganstanley/needle/releases,2,2
+/morganstanley/needle/blob/main/main/core/util.functions.ts,2,1
+/morganstanley/needle/actions,1,1
+/morganstanley/needle/actions/workflows/build.yml,1,1
+/morganstanley/needle/blob/main/main/constants/constants.ts,1,1
+/morganstanley/needle/blob/main/main/core/globals.ts,1,1
