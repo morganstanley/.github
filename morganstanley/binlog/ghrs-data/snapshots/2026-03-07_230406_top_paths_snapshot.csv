@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,132,100
+/morganstanley/binlog/tree/main/include/binlog,13,11
+/morganstanley/binlog/tree/main/include,12,11
+/morganstanley/binlog/issues,8,4
+/morganstanley/binlog/releases,7,5
+/morganstanley/binlog/tree/main/bin,5,5
+/morganstanley/binlog/tree/main/cmake,5,3
+/morganstanley/binlog/blob/main/INSTALL.md,4,3
+/morganstanley/binlog/blob/main/bin/bread.cpp,4,3
+/morganstanley/binlog/commits/main,3,3
