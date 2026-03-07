@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/testplan,144,92
+/morganstanley/testplan/pulls,44,12
+/morganstanley/testplan/commits/main,24,3
+/morganstanley/testplan/pull/1282,23,5
+/morganstanley/testplan/pull/1279,21,4
+/morganstanley/testplan/tree/main/testplan,19,12
+/morganstanley/testplan/pull/1279/changes,17,5
+/morganstanley/testplan/pull/1282/changes,12,3
+/morganstanley/testplan/pull/1278,11,5
+/morganstanley/testplan/blob/feed2ae403d550a3367e51989756fcd1e066d29e/examples/App/Basic/test_plan.py,11,1
