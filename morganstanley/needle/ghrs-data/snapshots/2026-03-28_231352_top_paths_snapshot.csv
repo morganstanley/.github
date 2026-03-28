@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/needle,13,11
+/morganstanley/needle/pulls,7,7
+/morganstanley/needle/actions,2,2
+/morganstanley/needle/issues,2,2
+/morganstanley/needle/actions/workflows/build.yml,1,1
+/morganstanley/needle/activity,1,1
+/morganstanley/needle/blob/7380c49e6b134ce717f0623c1e0b7741505d8d95/package.json,1,1
+/morganstanley/needle/blob/main/.github/copilot-instructions.md,1,1
+/morganstanley/needle/blob/main/readme.md,1,1
+/morganstanley/needle/compare/main...{{ urlEncodedRefName }},1,1
