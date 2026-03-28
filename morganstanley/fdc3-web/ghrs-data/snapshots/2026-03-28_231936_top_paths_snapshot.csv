@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/fdc3-web,18,11
+/morganstanley/fdc3-web/tree/main/projects,2,2
+/morganstanley/fdc3-web/tree/main/projects/fdc3-web,2,2
+/morganstanley/fdc3-web/tree/main/projects/fdc3-web/src,2,2
+/morganstanley/fdc3-web/compare/v0.9.1...v0.10.0,2,1
+/morganstanley/fdc3-web/blame/main/projects/fdc3-web/src/contracts.ts,1,1
+/morganstanley/fdc3-web/blob/78c95c4f349ddaca54b65226e0fc80431a9e94de/package.json,1,1
+/morganstanley/fdc3-web/blob/78c95c4f349ddaca54b65226e0fc80431a9e94de/projects/fdc3-web/package.json,1,1
+/morganstanley/fdc3-web/blob/78c95c4f349ddaca54b65226e0fc80431a9e94de/projects/messaging-provider/package.json,1,1
+/morganstanley/fdc3-web/blob/78c95c4f349ddaca54b65226e0fc80431a9e94de/projects/ui-provider/package.json,1,1
