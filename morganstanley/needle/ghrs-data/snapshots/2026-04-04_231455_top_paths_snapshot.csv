@@ -1,0 +1,8 @@
+url_path,views_total,views_unique
+/morganstanley/needle,10,8
+/morganstanley/needle/pulls,4,4
+/morganstanley/needle/blob/main/readme.md,3,2
+/morganstanley/needle/issues,2,2
+/morganstanley/needle/activity,1,1
+/morganstanley/needle/compare/main...{{ urlEncodedRefName }},1,1
+/morganstanley/needle/pull/87,1,1
