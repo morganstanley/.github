@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/optimus-cirrus,42,30
+/morganstanley/optimus-cirrus/tree/main/optimus,9,7
+/morganstanley/optimus-cirrus/branches,4,2
+/morganstanley/optimus-cirrus/issues,3,3
+/morganstanley/optimus-cirrus/commits/main,3,2
+/morganstanley/optimus-cirrus/tree/main/optimus/platform/projects,3,2
+/morganstanley/optimus-cirrus/tree/main/optimus/stratosphere,2,1
+/morganstanley/optimus-cirrus/blob/main/optimus/buildtool/projects/core/core.obt,1,1
+/morganstanley/optimus-cirrus/blob/main/optimus/stratosphere/common-macros/common-macros.obt,1,1
+/morganstanley/optimus-cirrus/blob/main/optimus/stratosphere/common-macros/common-macros.runconf,1,1
