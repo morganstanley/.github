@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/fdc3-web,5,4
+/morganstanley/fdc3-web/pull/310,4,2
+/morganstanley/fdc3-web/pull/311,3,2
+/morganstanley/fdc3-web/actions/workflows/build.yml,2,2
+/morganstanley/fdc3-web/pull/313/changes,2,1
+/morganstanley/fdc3-web/blob/34f1441b987b38008f747257de2d52b26866a2b6/package.json,1,1
+/morganstanley/fdc3-web/blob/34f1441b987b38008f747257de2d52b26866a2b6/projects/fdc3-web/package.json,1,1
+/morganstanley/fdc3-web/blob/34f1441b987b38008f747257de2d52b26866a2b6/projects/messaging-provider/package.json,1,1
+/morganstanley/fdc3-web/blob/34f1441b987b38008f747257de2d52b26866a2b6/projects/ui-provider/package.json,1,1
+/morganstanley/fdc3-web/blob/main/projects/ui-provider/src/app-resolver.component.ts,1,1
