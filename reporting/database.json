@@ -1957,12 +1957,17 @@
             "score": 8.2,
             "date": "2026-03-11T13:46:00Z",
             "commit": "78c95c4f349ddaca54b65226e0fc80431a9e94de"
+          },
+          {
+            "score": 8.1,
+            "date": "2026-03-25T13:51:46Z",
+            "commit": "78c95c4f349ddaca54b65226e0fc80431a9e94de"
           }
         ],
         "current": {
-          "score": 8.1,
-          "date": "2026-03-25T13:51:46Z",
-          "commit": "78c95c4f349ddaca54b65226e0fc80431a9e94de"
+          "score": 8.3,
+          "date": "2026-04-23T10:28:06Z",
+          "commit": "d6cf845b059b0edeb2ee53a49e2a98ab2ba24316"
         }
       },
       "url-detector": {
