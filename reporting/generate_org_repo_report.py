@@ -44,17 +44,26 @@ class GitHubClient:
                 with urllib.request.urlopen(req, timeout=60) as response:
                     body = response.read().decode("utf-8")
                     data = json.loads(body) if body else None
-                    response_headers = {k.lower(): v for k, v in response.headers.items()}
+                    response_headers = {
+                        k.lower(): v for k, v in response.headers.items()
+                    }
                     return data, response_headers
             except urllib.error.HTTPError as err:
                 body = err.read().decode("utf-8", errors="replace")
-                retry_after_seconds = self._parse_retry_after_seconds(err.headers.get("Retry-After"))
-                body_lower = body.lower()
-                is_primary_limit = err.code == 403 and err.headers.get("X-RateLimit-Remaining") == "0"
-                is_secondary_limit = err.code == 403 and (
-                    "secondary rate limit" in body_lower or "abuse detection" in body_lower
+                retry_after_seconds = self._parse_retry_after_seconds(
+                    err.headers.get("Retry-After")
                 )
-                is_retryable_rate_limit = err.code == 429 or is_primary_limit or is_secondary_limit
+                body_lower = body.lower()
+                is_primary_limit = (
+                    err.code == 403 and err.headers.get("X-RateLimit-Remaining") == "0"
+                )
+                is_secondary_limit = err.code == 403 and (
+                    "secondary rate limit" in body_lower
+                    or "abuse detection" in body_lower
+                )
+                is_retryable_rate_limit = (
+                    err.code == 429 or is_primary_limit or is_secondary_limit
+                )
 
                 if is_retryable_rate_limit and attempt < retries:
                     if is_primary_limit:
@@ -73,13 +82,17 @@ class GitHubClient:
                     time.sleep(sleep_for)
                     continue
 
-                raise RuntimeError(f"GitHub API error ({err.code}) for {request_label}: {body}") from err
+                raise RuntimeError(
+                    f"GitHub API error ({err.code}) for {request_label}: {body}"
+                ) from err
             except Exception as err:  # pragma: no cover - defensive
                 last_error = err
                 if attempt < retries:
                     time.sleep(attempt)
                 else:
-                    raise RuntimeError(f"Failed to call GitHub API for {request_label}: {err}") from err
+                    raise RuntimeError(
+                        f"Failed to call GitHub API for {request_label}: {err}"
+                    ) from err
 
         raise RuntimeError(f"Unexpected API failure for {request_label}: {last_error}")
 
@@ -118,7 +131,9 @@ class GitHubClient:
             "X-GitHub-Api-Version": "2022-11-28",
             "User-Agent": "org-repo-report-generator",
         }
-        req = urllib.request.Request(GRAPHQL_URL, headers=headers, data=payload, method="POST")
+        req = urllib.request.Request(
+            GRAPHQL_URL, headers=headers, data=payload, method="POST"
+        )
         data, _ = self._send_request(req, "graphql", retries=retries)
         if not isinstance(data, dict):
             raise RuntimeError("Unexpected GraphQL response format")
@@ -143,14 +158,18 @@ class GitHubClient:
         except (TypeError, ValueError, OverflowError):
             return None
 
-    def paginate(self, path: str, params: Optional[Dict[str, str]] = None) -> Iterable[object]:
+    def paginate(
+        self, path: str, params: Optional[Dict[str, str]] = None
+    ) -> Iterable[object]:
         next_path = path
         next_params = dict(params or {})
 
         while next_path:
             data, headers = self._request(next_path, next_params)
             if not isinstance(data, list):
-                raise RuntimeError(f"Expected list response for {next_path}, got {type(data)}")
+                raise RuntimeError(
+                    f"Expected list response for {next_path}, got {type(data)}"
+                )
 
             for item in data:
                 yield item
@@ -174,7 +193,11 @@ class GitHubClient:
             sections = [s.strip() for s in part.split(";")]
             if len(sections) < 2:
                 continue
-            if sections[1] == 'rel="next"' and sections[0].startswith("<") and sections[0].endswith(">"):
+            if (
+                sections[1] == 'rel="next"'
+                and sections[0].startswith("<")
+                and sections[0].endswith(">")
+            ):
                 return sections[0][1:-1]
         return None
 
@@ -232,69 +255,94 @@ class GitHubClient:
             return {}
 
         query = """
-        query RepoBatch($org: String!, $names: [String!]!) {
-          organization(login: $org) {
-            repositories(first: 100, names: $names) {
-              nodes {
-                name
-                defaultBranchRef {
-                  target {
-                    __typename
-                    ... on Commit {
-                      history(first: 1) {
-                        nodes {
-                          author {
-                            name
-                            user {
-                              login
-                            }
-                          }
-                          committer {
-                            name
-                            user {
-                              login
-                            }
-                          }
+        query RepoLatestUpdater($org: String!, $name: String!) {
+        repository(owner: $org, name: $name) {
+            name
+            defaultBranchRef {
+            target {
+                __typename
+                ... on Commit {
+                history(first: 1) {
+                    nodes {
+                    author {
+                        name
+                        user {
+                        login
                         }
-                      }
                     }
-                  }
+                    committer {
+                        name
+                        user {
+                        login
+                        }
+                    }
+                    }
                 }
-              }
+                }
             }
-          }
+            }
+        }
         }
         """
 
         latest_updaters: Dict[str, str] = {}
-        for start in range(0, len(repo_names), 100):
-            batch = repo_names[start : start + 100]
-            data = self._graphql_request(query, {"org": org, "names": batch})
-            organization = data.get("data", {}).get("organization", {}) if isinstance(data.get("data"), dict) else {}
-            repositories = organization.get("repositories", {}) if isinstance(organization, dict) else {}
-            nodes = repositories.get("nodes", []) if isinstance(repositories, dict) else []
 
-            for node in nodes:
-                if not isinstance(node, dict):
-                    continue
-                repo_name = str(node.get("name") or "")
-                branch_ref = node.get("defaultBranchRef", {}) if isinstance(node.get("defaultBranchRef"), dict) else {}
-                target = branch_ref.get("target", {}) if isinstance(branch_ref, dict) else {}
-                history = target.get("history", {}) if isinstance(target, dict) else {}
-                history_nodes = history.get("nodes", []) if isinstance(history, dict) else []
-                if not history_nodes:
-                    continue
-                latest_commit = history_nodes[0] if isinstance(history_nodes[0], dict) else {}
-                author = latest_commit.get("author", {}) if isinstance(latest_commit.get("author"), dict) else {}
-                committer = latest_commit.get("committer", {}) if isinstance(latest_commit.get("committer"), dict) else {}
+        for repo_name in repo_names:
+            if not repo_name:
+                continue
 
-                updater = ""
-                committer_user = committer.get("user", {}) if isinstance(committer.get("user"), dict) else {}
-                author_user = author.get("user", {}) if isinstance(author.get("user"), dict) else {}
-                updater = str(committer_user.get("login") or author_user.get("login") or "")
-                if not updater:
-                    updater = str(committer.get("name") or author.get("name") or "")
-                latest_updaters[repo_name] = updater
+            data = self._graphql_request(query, {"org": org, "name": repo_name})
+            repository = (
+                data.get("data", {}).get("repository", {})
+                if isinstance(data.get("data"), dict)
+                else {}
+            )
+            if not isinstance(repository, dict) or not repository:
+                continue
+
+            branch_ref = (
+                repository.get("defaultBranchRef", {})
+                if isinstance(repository.get("defaultBranchRef"), dict)
+                else {}
+            )
+            target = (
+                branch_ref.get("target", {}) if isinstance(branch_ref, dict) else {}
+            )
+            history = target.get("history", {}) if isinstance(target, dict) else {}
+            history_nodes = (
+                history.get("nodes", []) if isinstance(history, dict) else []
+            )
+            if not history_nodes:
+                continue
+
+            latest_commit = (
+                history_nodes[0] if isinstance(history_nodes[0], dict) else {}
+            )
+            author = (
+                latest_commit.get("author", {})
+                if isinstance(latest_commit.get("author"), dict)
+                else {}
+            )
+            committer = (
+                latest_commit.get("committer", {})
+                if isinstance(latest_commit.get("committer"), dict)
+                else {}
+            )
+
+            committer_user = (
+                committer.get("user", {})
+                if isinstance(committer.get("user"), dict)
+                else {}
+            )
+            author_user = (
+                author.get("user", {}) if isinstance(author.get("user"), dict) else {}
+            )
+
+            updater = str(committer_user.get("login") or author_user.get("login") or "")
+            if not updater:
+                updater = str(committer.get("name") or author.get("name") or "")
+
+            latest_updaters[repo_name] = updater
 
         return latest_updaters
 
@@ -303,7 +351,11 @@ class GitHubClient:
         repo_value = event.get("repo")
         if isinstance(repo_value, str) and repo_value:
             prefix = f"{org}/"
-            return repo_value[len(prefix) :] if repo_value.startswith(prefix) else repo_value
+            return (
+                repo_value[len(prefix) :]
+                if repo_value.startswith(prefix)
+                else repo_value
+            )
 
         repository = event.get("repository")
         if isinstance(repository, dict):
@@ -346,12 +398,15 @@ def write_csv(rows: List[Dict[str, str]], output_csv: str) -> None:
                     "repo_created_at": row["repo_created_at"],
                     "repo_created_by": row["repo_created_by"] or UNKNOWN_VALUE,
                     "most_recent_update_at": row["most_recent_update_at"],
-                    "most_recent_updated_by": row["most_recent_updated_by"] or UNKNOWN_VALUE,
+                    "most_recent_updated_by": row["most_recent_updated_by"]
+                    or UNKNOWN_VALUE,
                 }
             )
 
 
-def write_markdown(rows: List[Dict[str, str]], output_md: str, org: str, audit_supported: bool) -> None:
+def write_markdown(
+    rows: List[Dict[str, str]], output_md: str, org: str, audit_supported: bool
+) -> None:
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M:%S UTC")
     lines = [
         f"# {org} Repository Report",
@@ -414,7 +469,9 @@ def main() -> int:
     client = GitHubClient(token)
     repos = client.list_org_repos(org)
     repo_creators = client.get_repo_creators(org)
-    latest_updaters = client.get_latest_updaters(org, [str(repo.get("name") or "") for repo in repos])
+    latest_updaters = client.get_latest_updaters(
+        org, [str(repo.get("name") or "") for repo in repos]
+    )
     rows: List[Dict[str, str]] = []
 
     for repo in repos:
@@ -441,9 +498,9 @@ def main() -> int:
     rows.sort(key=lambda x: x["repo_name"].lower())
     write_csv(rows, output_csv)
     audit_supported = (
-        True if client.audit_supported is True
-        else False if client.audit_supported is False
-        else None
+        True
+        if client.audit_supported is True
+        else False if client.audit_supported is False else None
     )
     write_markdown(rows, output_md, org=org, audit_supported=audit_supported)
 
