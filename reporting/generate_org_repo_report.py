@@ -24,6 +24,7 @@ from typing import Dict, Iterable, List, Optional, Tuple
 
 API_BASE = "https://api.github.com"
 GRAPHQL_URL = "https://api.github.com/graphql"
+UNKNOWN_VALUE = "unknown"
 
 
 class GitHubClient:
@@ -339,7 +340,15 @@ def write_csv(rows: List[Dict[str, str]], output_csv: str) -> None:
         writer = csv.DictWriter(fh, fieldnames=headers)
         writer.writeheader()
         for row in rows:
-            writer.writerow(row)
+            writer.writerow(
+                {
+                    "repo_name": row["repo_name"],
+                    "repo_created_at": row["repo_created_at"],
+                    "repo_created_by": row["repo_created_by"] or UNKNOWN_VALUE,
+                    "most_recent_update_at": row["most_recent_update_at"],
+                    "most_recent_updated_by": row["most_recent_updated_by"] or UNKNOWN_VALUE,
+                }
+            )
 
 
 def write_markdown(rows: List[Dict[str, str]], output_md: str, org: str, audit_supported: bool) -> None:
@@ -360,9 +369,9 @@ def write_markdown(rows: List[Dict[str, str]], output_md: str, org: str, audit_s
                 [
                     row["repo_name"] or "n/a",
                     row["repo_created_at"] or "n/a",
-                    row["repo_created_by"] or "unknown",
+                    row["repo_created_by"] or UNKNOWN_VALUE,
                     row["most_recent_update_at"] or "n/a",
-                    row["most_recent_updated_by"] or "unknown",
+                    row["most_recent_updated_by"] or UNKNOWN_VALUE,
                 ]
             )
             + " |"
