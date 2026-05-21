@@ -2,6 +2,10 @@ name: Organization Repository Report
 
 on:
   workflow_dispatch:
+  pull_request:
+    paths:
+      - '.github/workflows/org-repo-report.yml'
+      - 'reporting/generate_org_repo_report.py'
   schedule:
     - cron: '0 6 * * 1'
 
@@ -34,7 +38,17 @@ jobs:
           OUTPUT_MD: reporting/org-repo-report.md
         run: python reporting/generate_org_repo_report.py
 
+      - name: Upload report artifacts for PR validation
+        if: ${{ github.event_name == 'pull_request' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: org-repo-report
+          path: |
+            reporting/org-repo-report.csv
+            reporting/org-repo-report.md
+
       - name: Commit and push report
+        if: ${{ github.event_name != 'pull_request' }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
