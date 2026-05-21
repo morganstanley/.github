@@ -8,12 +8,18 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: org-repo-report-github-org-stats
+  cancel-in-progress: true
+
 jobs:
   generate-org-repo-report:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GH_TOKEN }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -29,8 +35,6 @@ jobs:
         run: python reporting/generate_org_repo_report.py
 
       - name: Commit and push report
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           set -euo pipefail
           git config user.name "github-actions[bot]"
