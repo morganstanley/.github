@@ -397,8 +397,10 @@ def main() -> int:
         print("GH_TOKEN environment variable is required.", file=sys.stderr)
         return 1
 
-    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
-    os.makedirs(os.path.dirname(output_md), exist_ok=True)
+    output_csv_dir = os.path.dirname(output_csv) or "."
+    output_md_dir = os.path.dirname(output_md) or "."
+    os.makedirs(output_csv_dir, exist_ok=True)
+    os.makedirs(output_md_dir, exist_ok=True)
 
     client = GitHubClient(token)
     repos = client.list_org_repos(org)
@@ -429,7 +431,12 @@ def main() -> int:
 
     rows.sort(key=lambda x: x["repo_name"].lower())
     write_csv(rows, output_csv)
-    write_markdown(rows, output_md, org=org, audit_supported=bool(client.audit_supported))
+    audit_supported = (
+        True if client.audit_supported is True
+        else False if client.audit_supported is False
+        else None
+    )
+    write_markdown(rows, output_md, org=org, audit_supported=audit_supported)
 
     print(f"Wrote {len(rows)} rows to {output_csv} and {output_md}")
     return 0
