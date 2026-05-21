@@ -1,0 +1,45 @@
+name: Organization Repository Report
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 6 * * 1'
+
+permissions:
+  contents: write
+
+jobs:
+  generate-org-repo-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate report
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          ORG_NAME: morganstanley
+          OUTPUT_CSV: reporting/org-repo-report.csv
+          OUTPUT_MD: reporting/org-repo-report.md
+        run: python reporting/generate_org_repo_report.py
+
+      - name: Commit and push report
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B github-org-stats
+          git add reporting/org-repo-report.csv reporting/org-repo-report.md
+          if git diff --cached --quiet; then
+            echo "No report changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(reporting): update organization repository report"
+          git push origin HEAD:github-org-stats
