@@ -298,8 +298,10 @@ def main() -> int:
         print("GH_TOKEN environment variable is required.", file=sys.stderr)
         return 1
 
-    os.makedirs(os.path.dirname(output_csv), exist_ok=True)
-    os.makedirs(os.path.dirname(output_md), exist_ok=True)
+    output_csv_dir = os.path.dirname(output_csv) or "."
+    output_md_dir = os.path.dirname(output_md) or "."
+    os.makedirs(output_csv_dir, exist_ok=True)
+    os.makedirs(output_md_dir, exist_ok=True)
 
     client = GitHubClient(token)
     repos = client.list_org_repos(org)
