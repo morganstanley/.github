@@ -5,11 +5,11 @@ import unittest
 from pathlib import Path
 from unittest import mock
 
+import generate_org_repo_report as report
+
 SCRIPT_DIR = Path(__file__).resolve().parents[1]
 if str(SCRIPT_DIR) not in os.sys.path:
     os.sys.path.insert(0, str(SCRIPT_DIR))
-
-import generate_org_repo_report as report
 
 
 class TestHelpers(unittest.TestCase):
