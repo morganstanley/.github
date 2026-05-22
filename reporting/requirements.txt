@@ -1,0 +1,2 @@
+# No third-party Python dependencies are required.
+# Keep this file so Dependabot can track future packages added under reporting/.

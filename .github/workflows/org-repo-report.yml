@@ -11,6 +11,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: read
 
 concurrency:
   group: org-repo-report-github-org-stats
@@ -29,6 +30,24 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+
+      - name: Detect report script changes
+        if: ${{ github.event_name == 'pull_request' }}
+        id: report-script-changes
+        uses: dorny/paths-filter@v3
+        with:
+          filters: |
+            report_script:
+              - 'reporting/generate_org_repo_report.py'
+
+      - name: Run report script tests
+        if: ${{ github.event_name == 'pull_request' && steps.report-script-changes.outputs.report_script == 'true' }}
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r reporting/requirements-dev.txt
+          ruff check reporting
+          mypy reporting/generate_org_repo_report.py
+          pytest -q reporting/tests
 
       - name: Generate report
         env:
