@@ -9,7 +9,7 @@ SCRIPT_DIR = Path(__file__).resolve().parents[1]
 if str(SCRIPT_DIR) not in os.sys.path:
     os.sys.path.insert(0, str(SCRIPT_DIR))
 
-import generate_org_repo_report as report
+import generate_org_repo_report as report  # noqa: E402
 
 
 class TestHelpers(unittest.TestCase):
