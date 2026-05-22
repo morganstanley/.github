@@ -1,11 +1,6 @@
 name: Organization Repository Report
 
 on:
-  workflow_dispatch:
-  pull_request:
-    paths:
-      - '.github/workflows/org-repo-report.yml'
-      - 'reporting/generate_org_repo_report.py'
   schedule:
     - cron: '0 6 * * 1'
 
