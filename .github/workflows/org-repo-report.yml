@@ -34,11 +34,22 @@ jobs:
       - name: Detect report script changes
         if: ${{ github.event_name == 'pull_request' }}
         id: report-script-changes
-        uses: dorny/paths-filter@v3
+        uses: actions/github-script@v7
         with:
-          filters: |
-            report_script:
-              - 'reporting/generate_org_repo_report.py'
+          script: |
+            const files = await github.paginate(github.rest.pulls.listFiles, {
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              pull_number: context.payload.pull_request.number,
+              per_page: 100,
+            });
+
+            const reportScriptChanged = files.some(
+              (file) => file.filename === 'reporting/generate_org_repo_report.py'
+            );
+
+            core.info(`report_script changed: ${reportScriptChanged}`);
+            core.setOutput('report_script', reportScriptChanged ? 'true' : 'false');
 
       - name: Run report script tests
         if: ${{ github.event_name == 'pull_request' && steps.report-script-changes.outputs.report_script == 'true' }}
