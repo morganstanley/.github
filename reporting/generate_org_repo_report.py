@@ -292,9 +292,13 @@ class GitHubClient:
                 continue
 
             data = self._graphql_request(query, {"org": org, "name": repo_name})
+            data_payload = data.get("data")
+            if not isinstance(data_payload, dict):
+                continue
+
             repository = (
-                data.get("data", {}).get("repository", {})
-                if isinstance(data.get("data"), dict)
+                data_payload.get("repository", {})
+                if isinstance(data_payload.get("repository"), dict)
                 else {}
             )
             if not isinstance(repository, dict) or not repository:
@@ -497,11 +501,8 @@ def main() -> int:
 
     rows.sort(key=lambda x: x["repo_name"].lower())
     write_csv(rows, output_csv)
-    audit_supported = (
-        True
-        if client.audit_supported is True
-        else False if client.audit_supported is False else None
-    )
+    # Treat unknown audit support as available to avoid false warning text.
+    audit_supported = client.audit_supported is not False
     write_markdown(rows, output_md, org=org, audit_supported=audit_supported)
 
     print(f"Wrote {len(rows)} rows to {output_csv} and {output_md}")
