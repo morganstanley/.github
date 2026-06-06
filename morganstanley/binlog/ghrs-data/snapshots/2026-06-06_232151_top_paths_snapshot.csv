@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,65,41
+/morganstanley/binlog/blob/main/test/perf/LargeLogfile.cpp,4,3
+/morganstanley/binlog/tree/main/test,4,3
+/morganstanley/binlog/issues,4,2
+/morganstanley/binlog/tree/main/bin,3,3
+/morganstanley/binlog/pull/203,3,2
+/morganstanley/binlog/releases,3,2
+/morganstanley/binlog/blob/main/README.md,2,2
+/morganstanley/binlog/blob/main/example/HelloWorld.cpp,2,2
+/morganstanley/binlog/blob/main/bin/binaryio.cpp,2,1
