@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,62,43
+/morganstanley/binlog/releases,5,4
+/morganstanley/binlog/issues,4,4
+/morganstanley/binlog/issues/100,4,3
+/morganstanley/binlog/issues/162,2,2
+/morganstanley/binlog/commits/main,2,1
+/morganstanley/binlog/actions,1,1
+/morganstanley/binlog/blob/main/INSTALL.md,1,1
+/morganstanley/binlog/blob/main/test/perf/LargeLogfile.cpp,1,1
+/morganstanley/binlog/commit/7bb21fc1c1b265c90fb3aaafc39ea727f8d64a90,1,1
