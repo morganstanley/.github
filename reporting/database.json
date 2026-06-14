@@ -1226,12 +1226,17 @@
             "score": 5.7,
             "date": "2026-04-29T14:01:23Z",
             "commit": "d3b052a116a9739b9fbf0cf42cf111cd2b953ce5"
+          },
+          {
+            "score": 6.5,
+            "date": "2026-05-06T14:02:45Z",
+            "commit": "d3b052a116a9739b9fbf0cf42cf111cd2b953ce5"
           }
         ],
         "current": {
-          "score": 6.5,
-          "date": "2026-05-06T14:02:45Z",
-          "commit": "d3b052a116a9739b9fbf0cf42cf111cd2b953ce5"
+          "score": 6.2,
+          "date": "2026-06-10T14:27:26Z",
+          "commit": "9232a2224dfcd81e8893158fc4e30420faa9d77f"
         }
       },
       "testplan": {
@@ -2062,12 +2067,17 @@
             "score": 8.3,
             "date": "2026-04-23T10:28:06Z",
             "commit": "d6cf845b059b0edeb2ee53a49e2a98ab2ba24316"
+          },
+          {
+            "score": 8.1,
+            "date": "2026-05-13T14:04:31Z",
+            "commit": "43a4c9eff217aada15b83f157b6d0489ae18da60"
           }
         ],
         "current": {
-          "score": 8.1,
-          "date": "2026-05-13T14:04:31Z",
-          "commit": "43a4c9eff217aada15b83f157b6d0489ae18da60"
+          "score": 7.9,
+          "date": "2026-06-11T15:21:21Z",
+          "commit": "f34a8954c559ae887c6a4de55483c1636795d864"
         }
       },
       "url-detector": {
