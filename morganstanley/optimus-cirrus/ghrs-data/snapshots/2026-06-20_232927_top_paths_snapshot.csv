@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/optimus-cirrus,33,25
+/morganstanley/optimus-cirrus/tree/main/optimus,13,12
+/morganstanley/optimus-cirrus/tree/main/optimus/platform/projects,6,5
+/morganstanley/optimus-cirrus/commits,3,2
+/morganstanley/optimus-cirrus/blob/main/optimus/platform/projects/bitbucket-utils/src/main/scala/optimus/rest/bitbucket/BitBucket.scala,3,1
+/morganstanley/optimus-cirrus/tree/main/.github,3,1
+/morganstanley/optimus-cirrus/blob/main/optimus/platform/projects/dal_core/src/main/scala/optimus/platform/bitemporal/BitemporalSpaceImpl.scala,2,2
+/morganstanley/optimus-cirrus/pulls,2,2
+/morganstanley/optimus-cirrus/tree/main/optimus/buildtool/projects,2,2
+/morganstanley/optimus-cirrus/tree/main/optimus/silverking/projects/silverking,2,2
