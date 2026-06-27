@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/binlog,59,47
+/morganstanley/binlog/tree/main/bin,3,3
+/morganstanley/binlog/blob/main/INSTALL.md,3,2
+/morganstanley/binlog/blob/main/example/HelloWorld.cpp,3,2
+/morganstanley/binlog/tree/main/doc,3,2
+/morganstanley/binlog/tree/main/example,3,2
+/morganstanley/binlog/blob/main/doc/UserGuide.html,3,1
+/morganstanley/binlog/blob/main/doc/Internals.md,2,2
+/morganstanley/binlog/blob/main/example/LogRotation.cpp,2,2
+/morganstanley/binlog/issues,2,2
