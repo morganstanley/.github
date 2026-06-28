@@ -351,12 +351,17 @@
             "score": 8.6,
             "date": "2026-06-03T14:58:20Z",
             "commit": "fe0576bd1f19180e1eb19c3be9c6a7d47bb26d7a"
+          },
+          {
+            "score": 8.1,
+            "date": "2026-06-17T14:27:26Z",
+            "commit": "fe0576bd1f19180e1eb19c3be9c6a7d47bb26d7a"
           }
         ],
         "current": {
-          "score": 8.1,
-          "date": "2026-06-17T14:27:26Z",
-          "commit": "fe0576bd1f19180e1eb19c3be9c6a7d47bb26d7a"
+          "score": 8.3,
+          "date": "2026-06-24T14:03:49Z",
+          "commit": "d86a0a57d66aa516a44d46c879bc088865603a1e"
         }
       },
       "dotnet-please": {
