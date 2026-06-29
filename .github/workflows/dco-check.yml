@@ -283,7 +283,7 @@ jobs:
               }
               
               // Check if user is in allowed users list
-              const isAllowedUser = allowedUsers.includes(githubUsername) || allowedUsers.includes(commitAuthorName);
+              const isAllowedUser = allowedUsers.includes(githubUsername) || allowedUsers.includes(githubCommitterUsername);
               
               // Check if email domain is in allowed domains list
               const emailDomain = commitEmail.split('@')[1];
