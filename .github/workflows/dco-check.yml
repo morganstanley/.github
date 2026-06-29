@@ -264,7 +264,7 @@ jobs:
               const commitEmail = commit.commit.author.email;
               const commitMsg = commit.commit.message.split('\n')[0]; // First line of commit message
               const githubUsername = commit.author ? commit.author.login : "";
-              const commitAuthorName = commit?.commit?.author?.name || "";
+              const githubCommitterUsername = commit.committer?.login || "";
               const commitHashShort = commitHash.substring(0, 7);
               
               console.log(`Checking commit ${commitHashShort} by ${commitAuthor} <${commitEmail}>`);
