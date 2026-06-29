@@ -62,7 +62,7 @@ jobs:
         uses: actions/github-script@60a0d83039c74a4aee543508d2ffcb1c3799cdea # v7.0.1
         env:
           # Configurable list of GitHub usernames exempt from DCO requirements
-          ALLOWED_USERS: "dependabot[bot],dependabot,step-security-bot,github-actions[bot],github-actions,copilot-pr-agent[bot],copilot-pr-agent,copilot-server-agent[bot],copilot-server-agent,github-copilot[bot],github-copilot,copilot-swe-agent[bot],copilot-swe-agent"
+          ALLOWED_USERS: "dependabot[bot],dependabot,step-security-bot,github-actions[bot],github-actions,copilot-pr-agent[bot],copilot-pr-agent,copilot-server-agent[bot],copilot-server-agent,github-copilot[bot],github-copilot,copilot-swe-agent[bot],copilot-swe-agent,copilot,Copilot"
           PR_NUMBER: ${{ github.event.pull_request.number || steps.set-pr.outputs.pr_num || github.event.inputs.pr_number }}
           REPO: ${{ github.repository }}
           ALLOWED_EMAIL_DOMAINS: morganstanley.com,ms.com
@@ -264,6 +264,7 @@ jobs:
               const commitEmail = commit.commit.author.email;
               const commitMsg = commit.commit.message.split('\n')[0]; // First line of commit message
               const githubUsername = commit.author ? commit.author.login : "";
+              const githubCommitterUsername = commit.committer?.login || "";
               const commitHashShort = commitHash.substring(0, 7);
               
               console.log(`Checking commit ${commitHashShort} by ${commitAuthor} <${commitEmail}>`);
@@ -282,7 +283,7 @@ jobs:
               }
               
               // Check if user is in allowed users list
-              const isAllowedUser = allowedUsers.includes(githubUsername);
+              const isAllowedUser = allowedUsers.includes(githubUsername) || allowedUsers.includes(githubCommitterUsername);
               
               // Check if email domain is in allowed domains list
               const emailDomain = commitEmail.split('@')[1];
