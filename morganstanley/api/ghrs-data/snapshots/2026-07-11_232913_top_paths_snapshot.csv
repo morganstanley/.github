@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/api,29,25
+/morganstanley/api/tree/main/client-samples,20,18
+/morganstanley/api/tree/main,15,12
+/morganstanley/api/tree/main/client-samples/python,13,9
+/morganstanley/api/tree/main/client-samples/python/rest,13,7
+/morganstanley/api/tree/main/client-samples/java/rest/src,11,9
+/morganstanley/api/tree/main/client-samples/java,5,5
+/morganstanley/api/blob/main/client-samples/python/rest/config-example.json,4,4
+/morganstanley/api/blob/main/README.md,4,3
+/morganstanley/api/blob/main/client-samples/java/rest/src/main/java/com/ms/infra/example/application/config/MicroprofileConfigService.java,4,3
