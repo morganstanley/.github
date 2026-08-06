@@ -18,7 +18,8 @@
         "binlog",
         "gradle-plugin-application",
         "fdc3-web",
-        "url-detector"
+        "url-detector",
+        "hobbes"
       ],
       "excluded": []
     },
