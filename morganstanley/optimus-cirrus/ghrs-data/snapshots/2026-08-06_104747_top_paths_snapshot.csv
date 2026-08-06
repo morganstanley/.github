@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/optimus-cirrus,27,23
+/morganstanley/optimus-cirrus/tree/main/optimus,14,10
+/morganstanley/optimus-cirrus/pulls,7,3
+/morganstanley/optimus-cirrus/commits/main,3,1
+/morganstanley/optimus-cirrus/blob/ed0aab2e33e9d6a4a1504d2cdfbb3cc0ac8530d8/optimus/platform/projects/utils/src/main/scala/optimus/utils/Mail.scala,2,2
+/morganstanley/optimus-cirrus/tree/main/optimus/buildtool/projects/app/src/main/scala,2,2
+/morganstanley/optimus-cirrus/tree/main/optimus/platform/projects/dal_client,2,2
+/morganstanley/optimus-cirrus/blob/main/optimus/stratosphere/common-macros/src/main/scala/optimus/stratosphere/common/Namer.scala,2,1
+/morganstanley/optimus-cirrus/tree/main/optimus/platform/projects/bitbucket-utils,2,1
+/morganstanley/optimus-cirrus/tree/main/optimus/platform/projects/breadcrumbs,2,1
