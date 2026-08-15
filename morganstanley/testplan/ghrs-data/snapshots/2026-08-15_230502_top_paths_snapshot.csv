@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/testplan,75,44
+/morganstanley/testplan/pulls,25,6
+/morganstanley/testplan/pull/1332,16,4
+/morganstanley/testplan/pull/1341,13,2
+/morganstanley/testplan/pull/1332/changes,12,4
+/morganstanley/testplan/pull/1342,12,2
+/morganstanley/testplan/tree/main/examples,7,5
+/morganstanley/testplan/pull/1342/changes,7,4
+/morganstanley/testplan/actions/runs/29912648280/job/88899498117,5,1
+/morganstanley/testplan/commit/549d17447e1a53646d27f4eac60444768d2f09d3,4,3
