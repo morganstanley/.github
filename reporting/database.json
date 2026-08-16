@@ -1072,11 +1072,16 @@
             "score": 8.2,
             "date": "2026-07-29T14:02:20Z",
             "commit": "35e7480c07985e0a2a3e3f11b02faffc4a14c06c"
+          },
+          {
+            "score": 8.6,
+            "date": "2026-08-05T14:02:02Z",
+            "commit": "e5b99acdd2d9ca40dde75a66e718cb9da0834360"
           }
         ],
         "current": {
-          "score": 8.6,
-          "date": "2026-08-05T14:02:02Z",
+          "score": 8.4,
+          "date": "2026-08-12T13:51:22Z",
           "commit": "e5b99acdd2d9ca40dde75a66e718cb9da0834360"
         }
       },
@@ -2271,12 +2276,17 @@
             "score": 8.2,
             "date": "2026-07-22T13:59:36Z",
             "commit": "facd40e40db08520ca54350a3882b5e01ca06147"
+          },
+          {
+            "score": 8.3,
+            "date": "2026-08-05T14:00:38Z",
+            "commit": "764d1d6a94671c5e2cdbec965f34977e08d7f075"
           }
         ],
         "current": {
-          "score": 8.3,
-          "date": "2026-08-05T14:00:38Z",
-          "commit": "764d1d6a94671c5e2cdbec965f34977e08d7f075"
+          "score": 8.4,
+          "date": "2026-08-12T13:50:15Z",
+          "commit": "b1649e92f9ec6f2f70ddb1c44a12442e637d1799"
         }
       },
       "hobbes": {
