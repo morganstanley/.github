@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/api,53,33
+/morganstanley/api/tree/main/client-samples/python/rest,49,19
+/morganstanley/api/tree/main,43,26
+/morganstanley/api/tree/main/client-samples,38,23
+/morganstanley/api/tree/main/client-samples/python,24,12
+/morganstanley/api/blob/main/client-samples/python/rest/client_application.py,10,6
+/morganstanley/api/blob/main/client-samples/python/rest/config-example.json,8,7
+/morganstanley/api/blob/main/client-samples/python/rest/README.md,7,5
+/morganstanley/api/tree/main/client-samples/python/websockets,6,5
+/morganstanley/api/tree/main/.github,5,4
