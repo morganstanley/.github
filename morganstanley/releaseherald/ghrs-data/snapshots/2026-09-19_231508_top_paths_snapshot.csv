@@ -1,0 +1,8 @@
+url_path,views_total,views_unique
+/morganstanley/releaseherald,4,4
+/morganstanley/releaseherald/blob/main/src/releaseherald/main.py,4,1
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/base.py,4,1
+/morganstanley/releaseherald/blob/main/pyproject.toml,1,1
+/morganstanley/releaseherald/blob/main/src/releaseherald/configuration.py,1,1
+/morganstanley/releaseherald/blob/main/src/releaseherald/plugins/interface.py,1,1
+/morganstanley/releaseherald/tree/main/.github,1,1
