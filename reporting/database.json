@@ -177,12 +177,17 @@
             "score": 8.7,
             "date": "2026-09-09T13:28:28Z",
             "commit": "1b5d6c5fed49bcd699deaf9cac25665fd7075125"
+          },
+          {
+            "score": 9.4,
+            "date": "2026-09-16T13:28:36Z",
+            "commit": "373102a4d3d7af74a717f2a57fd0a343875ff1b7"
           }
         ],
         "current": {
-          "score": 9.4,
-          "date": "2026-09-16T13:28:36Z",
-          "commit": "373102a4d3d7af74a717f2a57fd0a343875ff1b7"
+          "score": 9,
+          "date": "2026-10-03T23:50:34Z",
+          "commit": "2c27c1ff4995b958c520106d5f8986f1f2107594"
         }
       },
       "desktopJS": {
@@ -724,12 +729,17 @@
             "score": 7,
             "date": "2026-09-10T23:33:57Z",
             "commit": "6da30b9efc304da3b8fce10c8a97db7a774e87c5"
+          },
+          {
+            "score": 7.4,
+            "date": "2026-09-16T13:29:48Z",
+            "commit": "4e2c9d4febe9bf1eeaccbfcbf822c2a14363429b"
           }
         ],
         "current": {
-          "score": 7.4,
-          "date": "2026-09-16T13:29:48Z",
-          "commit": "4e2c9d4febe9bf1eeaccbfcbf822c2a14363429b"
+          "score": 6.8,
+          "date": "2026-10-01T15:42:50Z",
+          "commit": "51be20110e7d3f033eca76a07bac95ef28d181d0"
         }
       },
       "ComposeUI": {
