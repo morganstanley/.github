@@ -1,0 +1,11 @@
+url_path,views_total,views_unique
+/morganstanley/url-detector,20,10
+/morganstanley/url-detector/blob/main/src/cli.ts,5,1
+/morganstanley/url-detector/pull/189,3,2
+/morganstanley/url-detector/blob/main/src/languageManager.ts,3,1
+/morganstanley/url-detector/blob/main/src/logger.ts,3,1
+/morganstanley/url-detector/pull/207/changes,2,2
+/morganstanley/url-detector/blob/main/examples/test.py,2,1
+/morganstanley/url-detector/blob/main/package.json,2,1
+/morganstanley/url-detector/blob/main/src/index.ts,2,1
+/morganstanley/url-detector/blob/main/src/options.ts,2,1
